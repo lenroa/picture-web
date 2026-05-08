@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poster Select | 优秀海报设计推荐</title>
+  <style>
+    :root {
+      --ink: #12100f;
+      --muted: #726d66;
+      --paper: #f7f1e8;
+      --panel: #fffaf2;
+      --line: #ded3c3;
+      --red: #d84635;
+      --blue: #226c9f;
+      --green: #27745b;
+      --yellow: #f0bc3f;
+      --shadow: 0 18px 50px rgba(44, 33, 20, 0.16);
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(18, 16, 15, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 16, 15, 0.035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 28px 28px;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .shell {
+      width: min(1480px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 42px;
+      padding-bottom: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 2px solid var(--ink);
+      background: var(--yellow);
+      box-shadow: 4px 4px 0 var(--ink);
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .meta span,
+    .favorite-toggle {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 242, 0.78);
+      color: var(--muted);
+      padding: 7px 10px;
+    }
+
+    .favorite-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 34px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
+    }
+
+    .favorite-toggle:hover {
+      transform: translateY(-1px);
+    }
+
+    .favorite-toggle[aria-pressed="true"] {
+      border-color: var(--ink);
+      background: var(--red);
+      color: #fffaf2;
+    }
+
+    .favorite-icon {
+      display: inline-grid;
+      width: 15px;
+      height: 15px;
+      place-items: center;
+      color: currentColor;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.95fr);
+      gap: 22px;
+      align-items: stretch;
+      min-height: calc(100vh - 118px);
+    }
+
+    .featured {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(280px, 0.78fr) minmax(250px, 0.58fr);
+      gap: 28px;
+      overflow: hidden;
+      border: 2px solid var(--ink);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      min-height: 640px;
+    }
+
+    .featured::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(216, 70, 53, 0.12), transparent 24%),
+        radial-gradient(circle at 84% 72%, rgba(34, 108, 159, 0.14), transparent 28%);
+    }
+
+    .poster-stage {
+      position: relative;
+      display: grid;
+      place-items: center;
+      padding: clamp(22px, 4vw, 54px);
+      border-right: 2px solid var(--ink);
+      background:
+        linear-gradient(135deg, rgba(18, 16, 15, 0.055) 25%, transparent 25%) 0 0 / 18px 18px,
+        #ebe1d0;
+    }
+
+    .poster-frame {
+      position: relative;
+      width: min(100%, 420px);
+      aspect-ratio: 3 / 4.15;
+      border: 2px solid var(--ink);
+      background: #f7f1e8;
+      box-shadow: 14px 16px 0 rgba(18, 16, 15, 0.9);
+      overflow: hidden;
+      transition: transform 240ms ease, box-shadow 240ms ease;
+    }
+
+    .poster-frame:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 18px 20px 0 rgba(18, 16, 15, 0.9);
+    }
+
+    .poster-art {
+      position: absolute;
+      inset: 0;
+      padding: 7.8%;
+      overflow: hidden;
+    }
+
+    .poster-art::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(transparent 0, rgba(255,255,255,0.12) 48%, transparent 52%),
+        repeating-linear-gradient(0deg, rgba(18,16,15,0.04) 0, rgba(18,16,15,0.04) 1px, transparent 1px, transparent 4px);
+      mix-blend-mode: multiply;
+    }
+
+    .poster-tag {
+      position: absolute;
+      left: 7.8%;
+      top: 7.8%;
+      z-index: 2;
+      border: 1px solid currentColor;
+      padding: 5px 7px;
+      font-size: clamp(10px, 1vw, 12px);
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .poster-no {
+      position: absolute;
+      right: 7.8%;
+      top: 7.8%;
+      z-index: 2;
+      font-size: clamp(11px, 1.2vw, 14px);
+      font-weight: 900;
+    }
+
+    .poster-title {
+      position: absolute;
+      left: 7.6%;
+      right: 7.6%;
+      bottom: 11%;
+      z-index: 2;
+      font-size: clamp(34px, 5.2vw, 78px);
+      line-height: 0.9;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .poster-sub {
+      position: absolute;
+      left: 7.8%;
+      right: 7.8%;
+      bottom: 5.8%;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: clamp(10px, 1vw, 12px);
+      font-weight: 750;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .style-bauhaus {
+      background: #f6ead8;
+      color: #12100f;
+    }
+
+    .style-bauhaus .shape-a {
+      position: absolute;
+      left: -12%;
+      top: 18%;
+      width: 74%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .style-bauhaus .shape-b {
+      position: absolute;
+      right: -7%;
+      top: 18%;
+      width: 42%;
+      height: 64%;
+      background: var(--blue);
+      clip-path: polygon(28% 0, 100% 0, 72% 100%, 0 100%);
+    }
+
+    .style-bauhaus .shape-c {
+      position: absolute;
+      left: 12%;
+      top: 33%;
+      width: 42%;
+      height: 34%;
+      border: 18px solid var(--ink);
+      transform: rotate(-8deg);
+    }
+
+    .style-bauhaus .shape-d {
+      position: absolute;
+      right: 20%;
+      bottom: 27%;
+      width: 21%;
+      aspect-ratio: 1;
+      background: var(--yellow);
+      transform: rotate(14deg);
+    }
+
+    .style-swiss {
+      background: #f4f5ef;
+    }
+
+    .style-swiss .shape-a {
+      position: absolute;
+      left: 0;
+      top: 27%;
+      width: 100%;
+      height: 4px;
+      background: var(--ink);
+      box-shadow: 0 54px 0 var(--ink), 0 108px 0 var(--ink), 0 162px 0 var(--ink);
+    }
+
+    .style-swiss .shape-b {
+      position: absolute;
+      left: 11%;
+      top: 18%;
+      width: 34%;
+      aspect-ratio: 1;
+      background: var(--red);
+    }
+
+    .style-swiss .shape-c {
+      position: absolute;
+      right: 8%;
+      top: 36%;
+      width: 48%;
+      height: 16%;
+      background: var(--ink);
+    }
+
+    .style-swiss .poster-title {
+      font-size: clamp(34px, 4.5vw, 64px);
+      line-height: 0.95;
+    }
+
+    .style-organic {
+      background: #e7efe8;
+      color: #17392c;
+    }
+
+    .style-organic .shape-a {
+      position: absolute;
+      left: -20%;
+      top: 12%;
+      width: 78%;
+      aspect-ratio: 1;
+      border-radius: 54% 46% 62% 38%;
+      background: #80a85d;
+      transform: rotate(18deg);
+    }
+
+    .style-organic .shape-b {
+      position: absolute;
+      right: -10%;
+      top: 20%;
+      width: 68%;
+      aspect-ratio: 1;
+      border-radius: 40% 60% 45% 55%;
+      background: #f2cf64;
+      transform: rotate(-20deg);
+      mix-blend-mode: multiply;
+    }
+
+    .style-organic .shape-c {
+      position: absolute;
+      left: 18%;
+      top: 32%;
+      width: 55%;
+      aspect-ratio: 1;
+      border: 3px solid #17392c;
+      border-radius: 50%;
+    }
+
+    .style-editorial {
+      background: #181614;
+      color: #f7f1e8;
+    }
+
+    .style-editorial .shape-a {
+      position: absolute;
+      inset: 12% 10% 34%;
+      background:
+        linear-gradient(120deg, transparent 0 34%, #f7f1e8 34% 36%, transparent 36%),
+        linear-gradient(30deg, #d84635 0 45%, #226c9f 45% 100%);
+      filter: contrast(1.05);
+    }
+
+    .style-editorial .shape-b {
+      position: absolute;
+      left: 9%;
+      top: 51%;
+      width: 60%;
+      height: 10%;
+      background: #f0bc3f;
+    }
+
+    .style-editorial .shape-c {
+      position: absolute;
+      right: 11%;
+      top: 18%;
+      width: 18%;
+      height: 55%;
+      border: 2px solid #f7f1e8;
+    }
+
+    .style-tech {
+      background: #f1f3f4;
+      color: #11151a;
+    }
+
+    .style-tech .shape-a {
+      position: absolute;
+      left: 9%;
+      top: 15%;
+      width: 82%;
+      height: 48%;
+      background:
+        linear-gradient(90deg, rgba(17,21,26,0.9) 1px, transparent 1px),
+        linear-gradient(rgba(17,21,26,0.9) 1px, transparent 1px);
+      background-size: 24px 24px;
+      border: 2px solid #11151a;
+    }
+
+    .style-tech .shape-b {
+      position: absolute;
+      left: 17%;
+      top: 22%;
+      width: 30%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 22px solid #226c9f;
+    }
+
+    .style-tech .shape-c {
+      position: absolute;
+      right: 16%;
+      top: 30%;
+      width: 26%;
+      aspect-ratio: 1;
+      background: #d84635;
+      transform: rotate(45deg);
+    }
+
+    .style-cultural {
+      background: #f8eee0;
+      color: #20120e;
+    }
+
+    .style-cultural .shape-a {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 28%;
+      background: #20120e;
+    }
+
+    .style-cultural .shape-b {
+      position: absolute;
+      left: 13%;
+      top: 17%;
+      width: 74%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #d84635;
+    }
+
+    .style-cultural .shape-c {
+      position: absolute;
+      left: 21%;
+      top: 28%;
+      width: 58%;
+      height: 22%;
+      border-top: 20px solid #f0bc3f;
+      border-bottom: 20px solid #f0bc3f;
+    }
+
+    .feature-copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(24px, 3vw, 42px);
+      min-width: 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--ink);
+      background: var(--yellow);
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 9ch;
+      margin: 24px 0 18px;
+      font-size: clamp(58px, 8vw, 114px);
+      line-height: 0.86;
+      letter-spacing: 0;
+      font-weight: 950;
+    }
+
+    .lead {
+      max-width: 34em;
+      margin: 0;
+      color: #4f4942;
+      font-size: clamp(16px, 1.2vw, 18px);
+      line-height: 1.72;
+    }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .score {
+      min-height: 92px;
+      border: 1px solid var(--ink);
+      background: rgba(247, 241, 232, 0.78);
+      padding: 12px;
+    }
+
+    .score strong {
+      display: block;
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .score span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .feature-notes {
+      display: grid;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .note {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      border-top: 1px solid var(--line);
+      padding-top: 13px;
+    }
+
+    .note b {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--ink);
+      background: #fff;
+      font-size: 13px;
+    }
+
+    .note strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .note span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    .controls {
+      border: 2px solid var(--ink);
+      background: var(--panel);
+      padding: 16px;
+      box-shadow: 8px 8px 0 rgba(18, 16, 15, 0.9);
+    }
+
+    .controls h2,
+    .section-title h2 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .filter {
+      min-height: 36px;
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 7px 11px;
+      font-size: 13px;
+      font-weight: 760;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .filter:hover {
+      transform: translateY(-1px);
+    }
+
+    .filter[aria-pressed="true"] {
+      background: var(--ink);
+      color: #fffaf2;
+    }
+
+    .recommend-list {
+      display: grid;
+      gap: 12px;
+      max-height: calc(100vh - 210px);
+      overflow: auto;
+      padding: 0 4px 8px 0;
+      scrollbar-color: var(--ink) transparent;
+    }
+
+    .rec-card {
+      display: grid;
+      grid-template-columns: 108px 1fr;
+      gap: 14px;
+      align-items: stretch;
+      border: 2px solid var(--ink);
+      background: var(--panel);
+      padding: 12px;
+      box-shadow: 6px 6px 0 rgba(18, 16, 15, 0.9);
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .rec-card:hover,
+    .rec-card.is-active {
+      transform: translate(-2px, -2px);
+      box-shadow: 9px 9px 0 rgba(18, 16, 15, 0.9);
+      background: #fffdf8;
+    }
+
+    .rec-mini {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      border: 1px solid var(--ink);
+      overflow: hidden;
+    }
+
+    .rec-body {
+      min-width: 0;
+    }
+
+    .rec-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .rec-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.12;
+      font-weight: 900;
+    }
+
+    .rec-score {
+      flex: 0 0 auto;
+      border: 1px solid var(--ink);
+      background: var(--yellow);
+      padding: 4px 6px;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .rec-score.is-favorite {
+      background: var(--red);
+      color: #fffaf2;
+    }
+
+    .rec-desc {
+      margin: 9px 0 11px;
+      color: #575049;
+      font-size: 13px;
+      line-height: 1.48;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tags span {
+      border: 1px solid var(--line);
+      color: var(--muted);
+      padding: 4px 6px;
+      font-size: 11px;
+      line-height: 1;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .details {
+      margin-top: 26px;
+      border: 2px solid var(--ink);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      padding: 22px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .section-title p {
+      max-width: 58em;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .insight {
+      min-height: 188px;
+      padding: 22px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .insight:nth-child(3n) {
+      border-right: 0;
+    }
+
+    .insight .kicker {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .insight h3 {
+      margin: 18px 0 10px;
+      font-size: 22px;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .insight p {
+      margin: 0;
+      color: #575049;
+      font-size: 14px;
+      line-height: 1.62;
+    }
+
+    .palette {
+      display: flex;
+      gap: 6px;
+      margin-top: 16px;
+    }
+
+    .swatch {
+      width: 22px;
+      height: 22px;
+      border: 1px solid var(--ink);
+      background: var(--swatch);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 1120px) {
+      .hero,
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .featured {
+        min-height: 0;
+      }
+
+      .poster-stage {
+        min-height: 520px;
+        border-right: 0;
+        border-bottom: 2px solid var(--ink);
+      }
+
+      .recommend-list {
+        max-height: none;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 20px, 560px);
+        padding-top: 18px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .meta {
+        justify-content: flex-start;
+      }
+
+      .poster-stage {
+        min-height: 440px;
+        padding: 28px;
+      }
+
+      .poster-frame {
+        width: min(100%, 315px);
+        box-shadow: 9px 11px 0 rgba(18, 16, 15, 0.9);
+      }
+
+      .feature-copy {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: clamp(48px, 16vw, 78px);
+      }
+
+      .score-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .recommend-list {
+        grid-template-columns: 1fr;
+      }
+
+      .rec-card {
+        grid-template-columns: 88px 1fr;
+      }
+
+      .section-title {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .insight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insight,
+      .insight:nth-child(3n) {
+        border-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar" aria-label="页面信息">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">PS</div>
+        <div>
+          <strong>Poster Select</strong>
+          <span>优秀海报设计推荐</span>
+        </div>
+      </div>
+      <div class="meta" aria-label="策展指标">
+        <span>2026 Curated Board</span>
+        <span>6 styles / 18 insights</span>
+        <span>Print + Social Ready</span>
+        <button class="favorite-toggle" id="favoriteToggle" type="button" aria-pressed="false">
+          <span class="favorite-icon" aria-hidden="true">♡</span>
+          <span id="favoriteLabel">收藏当前</span>
+          <span id="favoriteCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="精选推荐">
+      <article class="featured">
+        <div class="poster-stage" aria-label="主推海报预览">
+          <div class="poster-frame" id="featuredPoster"></div>
+        </div>
+        <div class="feature-copy">
+          <div>
+            <span class="eyebrow" id="featuredCategory">Editor Pick</span>
+            <h1 id="featuredName">Bauhaus Pulse</h1>
+            <p class="lead" id="featuredIntro">
+              用最少的几何构件制造强烈节奏，适合艺术展、设计节、音乐厂牌发布等需要一眼建立识别度的主题。
+            </p>
+            <div class="score-grid" aria-label="推荐评分">
+              <div class="score">
+                <strong id="scoreImpact">98</strong>
+                <span>视觉冲击</span>
+              </div>
+              <div class="score">
+                <strong id="scoreLayout">95</strong>
+                <span>版式完成度</span>
+              </div>
+              <div class="score">
+                <strong id="scoreUse">92</strong>
+                <span>可复用性</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-notes" id="featureNotes" aria-label="设计要点"></div>
+        </div>
+      </article>
+
+      <aside class="sidebar" aria-label="推荐清单">
+        <div class="controls">
+          <h2>推荐维度</h2>
+          <div class="filter-row" id="filters" aria-label="海报风格筛选"></div>
+        </div>
+        <div class="recommend-list" id="recommendList"></div>
+      </aside>
+    </section>
+
+    <section class="details" aria-label="设计拆解">
+      <div class="section-title">
+        <h2>设计拆解</h2>
+        <p>每张推荐都拆成“为什么好看、怎么复用、适合什么场景”三件事，方便你把视觉判断转成可执行的设计动作。</p>
+      </div>
+      <div class="insight-grid" id="insightGrid"></div>
+    </section>
+  </main>
+
+  <template id="posterTemplate">
+    <div class="poster-art">
+      <span class="poster-tag"></span>
+      <span class="poster-no"></span>
+      <span class="shape-a"></span>
+      <span class="shape-b"></span>
+      <span class="shape-c"></span>
+      <span class="shape-d"></span>
+      <strong class="poster-title"></strong>
+      <span class="poster-sub">
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+  </template>
+
+  <script>
+    const posters = [
+      {
+        id: "bauhaus",
+        name: "Bauhaus Pulse",
+        short: "Bauhaus",
+        category: "几何构成",
+        style: "style-bauhaus",
+        score: [98, 95, 92],
+        intro: "用最少的几何构件制造强烈节奏，适合艺术展、设计节、音乐厂牌发布等需要一眼建立识别度的主题。",
+        desc: "红蓝黄黑的高对比组合，让信息层级和视觉记忆同时成立。",
+        tags: ["展览", "音乐", "品牌活动"],
+        palette: ["#d84635", "#226c9f", "#f0bc3f", "#12100f"],
+        notes: [
+          ["01", "把视觉锚点放大", "主形体占据画面 60% 以上，远距离也能被快速识别。"],
+          ["02", "文字跟着几何走", "标题压到底部形成稳定重心，避免元素四散。"],
+          ["03", "限制颜色数量", "四色以内更容易形成系列化延展。"]
+        ],
+        insights: [
+          "适合用在需要强符号感的发布、节庆、展览主视觉。",
+          "复用时先定一个大圆或大矩形，再用文字压住视觉重心。",
+          "注意留白不要被装饰填满，冲击力来自尺度差。"
+        ]
+      },
+      {
+        id: "swiss",
+        name: "Grid Silence",
+        short: "Swiss",
+        category: "瑞士网格",
+        style: "style-swiss",
+        score: [91, 99, 96],
+        intro: "把理性网格、留白和少量色块结合，适合建筑、摄影、设计论坛等强调专业感的内容。",
+        desc: "克制的线性秩序让内容更可信，适合信息密度较高的海报。",
+        tags: ["论坛", "建筑", "摄影"],
+        palette: ["#f4f5ef", "#12100f", "#d84635", "#ded3c3"],
+        notes: [
+          ["01", "网格先于装饰", "先确定列宽和基线，再放置图形与文字。"],
+          ["02", "用一个红色作信号", "少量高饱和色能承担导航和重点提醒。"],
+          ["03", "标题保持冷静", "避免过度变形，靠尺寸和位置建立权重。"]
+        ],
+        insights: [
+          "最适合讲清时间、地点、嘉宾、议程等结构化信息。",
+          "复用时可把红色块换成主办方品牌色。",
+          "留白不是空，是让观看者有路径可走。"
+        ]
+      },
+      {
+        id: "organic",
+        name: "Botanic Motion",
+        short: "Organic",
+        category: "自然有机",
+        style: "style-organic",
+        score: [90, 89, 94],
+        intro: "柔和色块与非对称形体营造亲近感，适合市集、生活方式、环保、餐饮和社区活动。",
+        desc: "自然形态能降低商业感，让活动更像一次可参与的邀请。",
+        tags: ["市集", "生活方式", "环保"],
+        palette: ["#e7efe8", "#80a85d", "#f2cf64", "#17392c"],
+        notes: [
+          ["01", "形状要有呼吸", "避免完美几何，使用轻微扭曲的轮廓会更自然。"],
+          ["02", "颜色保持低噪声", "降低饱和度，让人先感到舒服再阅读。"],
+          ["03", "标题不必太硬", "字重可以强，但节奏要松，适合亲和型主题。"]
+        ],
+        insights: [
+          "适合主打温度、手作、自然、社区关系的活动。",
+          "复用时可以把有机色块替换为产品或食材轮廓。",
+          "要避免过度可爱化，保留一点版式秩序会更高级。"
+        ]
+      },
+      {
+        id: "editorial",
+        name: "Noir Feature",
+        short: "Noir",
+        category: "编辑视觉",
+        style: "style-editorial",
+        score: [96, 92, 88],
+        intro: "暗底、高反差图形和横向色条形成杂志封面感，适合电影、讲座、艺术项目和高级感品牌内容。",
+        desc: "像封面一样制造主张，情绪浓度高，适合讲一个明确观点。",
+        tags: ["电影", "讲座", "艺术项目"],
+        palette: ["#181614", "#f7f1e8", "#d84635", "#226c9f"],
+        notes: [
+          ["01", "先确定情绪", "暗底让信息更戏剧化，但每个元素都要有理由。"],
+          ["02", "大面积对比", "浅色标题与明亮色条保证移动端缩略图可读。"],
+          ["03", "像封面一样编辑", "只保留最能传达态度的标题和副信息。"]
+        ],
+        insights: [
+          "适合有观点、有情绪、有策展语境的项目。",
+          "复用时先写一句强标题，再反推图形节奏。",
+          "暗色海报要检查小尺寸可读性，别让细节沉掉。"
+        ]
+      },
+      {
+        id: "tech",
+        name: "Signal Grid",
+        short: "Signal",
+        category: "科技系统",
+        style: "style-tech",
+        score: [93, 94, 97],
+        intro: "网格、模块和清晰几何让技术内容显得可靠，适合 AI、SaaS、硬件发布和开发者活动。",
+        desc: "用系统感替代炫技感，画面干净，适配发布页与社交封面。",
+        tags: ["AI", "发布会", "开发者"],
+        palette: ["#f1f3f4", "#11151a", "#226c9f", "#d84635"],
+        notes: [
+          ["01", "网格承担语义", "让线框像数据结构，而不是纯装饰背景。"],
+          ["02", "模块保持硬朗", "圆与方形成技术秩序中的变化。"],
+          ["03", "文案要短", "科技海报越克制，越容易显得成熟。"]
+        ],
+        insights: [
+          "适合技术、工具、产品更新、开发者社区传播。",
+          "复用时用产品截图替换网格区也成立。",
+          "避免荧光赛博感，成熟的科技视觉通常更清淡。"
+        ]
+      },
+      {
+        id: "cultural",
+        name: "Archive Red",
+        short: "Archive",
+        category: "文化复古",
+        style: "style-cultural",
+        score: [94, 91, 90],
+        intro: "复古红、厚重黑和图章式构图带来文化记忆，适合书展、戏剧、城市文化节和传统主题更新。",
+        desc: "用现代网格收束传统气质，既有历史感又不会显旧。",
+        tags: ["书展", "戏剧", "城市文化"],
+        palette: ["#f8eee0", "#20120e", "#d84635", "#f0bc3f"],
+        notes: [
+          ["01", "传统色现代用", "降低花纹密度，保留大色块和强构图。"],
+          ["02", "中心图形要稳", "圆形作为文化符号容器，天然有仪式感。"],
+          ["03", "字形别太复杂", "文字越克制，文化主题越有当代感。"]
+        ],
+        insights: [
+          "适合文化机构、城市活动、书店、剧场等主题。",
+          "复用时可把中心圆替换成纹样、城市剪影或展品局部。",
+          "关键是控制怀旧程度，让它像当代设计而不是仿古海报。"
+        ]
+      }
+    ];
+
+    const featuredPoster = document.querySelector("#featuredPoster");
+    const posterTemplate = document.querySelector("#posterTemplate");
+    const recommendList = document.querySelector("#recommendList");
+    const filters = document.querySelector("#filters");
+    const insightGrid = document.querySelector("#insightGrid");
+    const featureNotes = document.querySelector("#featureNotes");
+    const favoriteToggle = document.querySelector("#favoriteToggle");
+    const favoriteLabel = document.querySelector("#favoriteLabel");
+    const favoriteCount = document.querySelector("#favoriteCount");
+    const favoriteIcon = favoriteToggle.querySelector(".favorite-icon");
+    const storageKey = "poster-select-favorites";
+    let activeFilter = "全部";
+    let activeId = posters[0].id;
+    let favorites = new Set(JSON.parse(localStorage.getItem(storageKey) || "[]"));
+
+    function makePosterArt(poster, compact = false) {
+      const node = posterTemplate.content.firstElementChild.cloneNode(true);
+      node.classList.add(poster.style);
+      node.querySelector(".poster-tag").textContent = poster.category;
+      node.querySelector(".poster-no").textContent = poster.score[0];
+      node.querySelector(".poster-title").textContent = compact ? poster.short : poster.name;
+      const sub = node.querySelectorAll(".poster-sub span");
+      sub[0].textContent = "Poster Select";
+      sub[1].textContent = poster.tags[0];
+      return node;
+    }
+
+    function renderFeatured(poster) {
+      activeId = poster.id;
+      featuredPoster.replaceChildren(makePosterArt(poster));
+      document.querySelector("#featuredCategory").textContent = poster.category;
+      document.querySelector("#featuredName").textContent = poster.name;
+      document.querySelector("#featuredIntro").textContent = poster.intro;
+      document.querySelector("#scoreImpact").textContent = poster.score[0];
+      document.querySelector("#scoreLayout").textContent = poster.score[1];
+      document.querySelector("#scoreUse").textContent = poster.score[2];
+      featureNotes.replaceChildren(...poster.notes.map(([num, title, body]) => {
+        const note = document.createElement("div");
+        note.className = "note";
+        note.innerHTML = `<b>${num}</b><div><strong>${title}</strong><span>${body}</span></div>`;
+        return note;
+      }));
+      updateFavoriteToggle();
+      renderCards();
+      renderInsights();
+    }
+
+    function renderFilters() {
+      const names = ["全部", "已收藏", ...posters.map((poster) => poster.category)];
+      filters.replaceChildren(...names.map((name) => {
+        const button = document.createElement("button");
+        button.className = "filter";
+        button.type = "button";
+        button.textContent = name;
+        button.setAttribute("aria-pressed", String(name === activeFilter));
+        button.addEventListener("click", () => {
+          activeFilter = name;
+          renderFilters();
+          renderCards();
+        });
+        return button;
+      }));
+    }
+
+    function renderCards() {
+      const visible = posters.filter((poster) => {
+        if (activeFilter === "全部") return true;
+        if (activeFilter === "已收藏") return favorites.has(poster.id);
+        return poster.category === activeFilter;
+      });
+      recommendList.replaceChildren(...visible.map((poster) => {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = `rec-card${poster.id === activeId ? " is-active" : ""}`;
+        card.setAttribute("aria-label", `查看 ${poster.name}`);
+
+        const mini = document.createElement("div");
+        mini.className = "rec-mini";
+        mini.appendChild(makePosterArt(poster, true));
+
+        const body = document.createElement("div");
+        body.className = "rec-body";
+        body.innerHTML = `
+          <div class="rec-top">
+            <h3 class="rec-title">${poster.name}</h3>
+            <span class="rec-score${favorites.has(poster.id) ? " is-favorite" : ""}">${favorites.has(poster.id) ? "已藏" : poster.score[0]}</span>
+          </div>
+          <p class="rec-desc">${poster.desc}</p>
+          <div class="tags">${poster.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
+        `;
+
+        card.append(mini, body);
+        card.addEventListener("click", () => renderFeatured(poster));
+        return card;
+      }));
+    }
+
+    function saveFavorites() {
+      localStorage.setItem(storageKey, JSON.stringify([...favorites]));
+    }
+
+    function updateFavoriteToggle() {
+      const activePoster = posters.find((poster) => poster.id === activeId) || posters[0];
+      const isFavorite = favorites.has(activePoster.id);
+      favoriteToggle.setAttribute("aria-pressed", String(isFavorite));
+      favoriteToggle.setAttribute("aria-label", isFavorite ? `取消收藏 ${activePoster.name}` : `收藏 ${activePoster.name}`);
+      favoriteIcon.textContent = isFavorite ? "♥" : "♡";
+      favoriteLabel.textContent = isFavorite ? "已收藏" : "收藏当前";
+      favoriteCount.textContent = favorites.size;
+    }
+
+    function toggleFavorite() {
+      if (favorites.has(activeId)) {
+        favorites.delete(activeId);
+      } else {
+        favorites.add(activeId);
+      }
+      saveFavorites();
+      updateFavoriteToggle();
+      renderFilters();
+      renderCards();
+    }
+
+    function renderInsights() {
+      const poster = posters.find((item) => item.id === activeId) || posters[0];
+      insightGrid.replaceChildren(...poster.insights.map((text, index) => {
+        const card = document.createElement("article");
+        card.className = "insight";
+        card.innerHTML = `
+          <div class="kicker"><span>${poster.category}</span><span>0${index + 1}</span></div>
+          <h3>${["为什么推荐", "如何复用", "使用提醒"][index]}</h3>
+          <p>${text}</p>
+          <div class="palette">
+            ${poster.palette.map((color) => `<span class="swatch" style="--swatch:${color}"></span>`).join("")}
+          </div>
+        `;
+        return card;
+      }));
+    }
+
+    favoriteToggle.addEventListener("click", toggleFavorite);
+    renderFilters();
+    renderFeatured(posters[0]);
+  </script>
+</body>
+</html>
