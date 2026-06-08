@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LITTA 客户端产品规划思考</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* === THEME TOKENS === */
+    :root {
+      --ink: #101513;
+      --ink-2: #17231f;
+      --panel: rgba(246, 242, 230, 0.94);
+      --panel-soft: rgba(246, 242, 230, 0.12);
+      --line: rgba(246, 242, 230, 0.22);
+      --text: #f6f2e6;
+      --muted: rgba(246, 242, 230, 0.68);
+      --paper-text: #18201c;
+      --paper-muted: #5d675f;
+      --jade: #47c891;
+      --amber: #f0b95b;
+      --coral: #ef6f5e;
+      --blue: #6aa8ff;
+      --lime: #d5e86d;
+      --shadow: 0 clamp(1rem, 3vw, 2.5rem) clamp(2rem, 6vw, 5rem) rgba(0, 0, 0, 0.34);
+      --radius: clamp(0.35rem, 0.7vw, 0.5rem);
+      --font-display: "Noto Serif SC", serif;
+      --font-body: "Noto Sans SC", sans-serif;
+      --title-size: clamp(2rem, 5.6vw, 5.8rem);
+      --h2-size: clamp(1.45rem, 3.4vw, 3.15rem);
+      --h3-size: clamp(0.92rem, 1.55vw, 1.35rem);
+      --body-size: clamp(0.78rem, 1.18vw, 1.08rem);
+      --small-size: clamp(0.62rem, 0.82vw, 0.82rem);
+      --slide-padding: clamp(1rem, 4vw, 4rem);
+      --content-gap: clamp(0.65rem, 1.6vw, 1.6rem);
+      --element-gap: clamp(0.38rem, 0.9vw, 0.9rem);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --duration-normal: 0.68s;
+    }
+
+    /* === RESET === */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===========================================
+       VIEWPORT FITTING: MANDATORY BASE STYLES
+       Include this ENTIRE file in every presentation.
+       These styles ensure slides fit exactly in the viewport.
+       =========================================== */
+
+    /* 1. Lock html/body to viewport */
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    /* 2. Each slide = exact viewport height */
+    .slide {
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh; /* Dynamic viewport height for mobile browsers */
+        overflow: hidden; /* CRITICAL: Prevent ANY overflow */
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    /* 3. Content container with flex for centering */
+    .slide-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 100%;
+        overflow: hidden; /* Double-protection against overflow */
+        padding: var(--slide-padding);
+    }
+
+    /* 4. ALL typography uses clamp() for responsive scaling */
+    :root {
+        /* Titles scale from mobile to desktop */
+        --title-size: clamp(1.5rem, 5vw, 4rem);
+        --h2-size: clamp(1.25rem, 3.5vw, 2.5rem);
+        --h3-size: clamp(1rem, 2.5vw, 1.75rem);
+
+        /* Body text */
+        --body-size: clamp(0.75rem, 1.5vw, 1.125rem);
+        --small-size: clamp(0.65rem, 1vw, 0.875rem);
+
+        /* Spacing scales with viewport */
+        --slide-padding: clamp(1rem, 4vw, 4rem);
+        --content-gap: clamp(0.5rem, 2vw, 2rem);
+        --element-gap: clamp(0.25rem, 1vw, 1rem);
+    }
+
+    /* 5. Cards/containers use viewport-relative max sizes */
+    .card, .container, .content-box {
+        max-width: min(90vw, 1000px);
+        max-height: min(80vh, 700px);
+    }
+
+    /* 6. Lists auto-scale with viewport */
+    .feature-list, .bullet-list {
+        gap: clamp(0.4rem, 1vh, 1rem);
+    }
+
+    .feature-list li, .bullet-list li {
+        font-size: var(--body-size);
+        line-height: 1.4;
+    }
+
+    /* 7. Grids adapt to available space */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+        gap: clamp(0.5rem, 1.5vw, 1rem);
+    }
+
+    /* 8. Images constrained to viewport */
+    img, .image-container {
+        max-width: 100%;
+        max-height: min(50vh, 400px);
+        object-fit: contain;
+    }
+
+    /* === DECK-SPECIFIC VIEWPORT OVERRIDES === */
+    :root {
+      --title-size: clamp(2rem, 5.6vw, 5.8rem);
+      --h2-size: clamp(1.45rem, 3.4vw, 3.15rem);
+      --h3-size: clamp(0.92rem, 1.55vw, 1.35rem);
+      --body-size: clamp(0.78rem, 1.18vw, 1.08rem);
+      --small-size: clamp(0.62rem, 0.82vw, 0.82rem);
+      --slide-padding: clamp(1rem, 4vw, 4rem);
+      --content-gap: clamp(0.65rem, 1.6vw, 1.6rem);
+      --element-gap: clamp(0.38rem, 0.9vw, 0.9rem);
+    }
+
+    /* ===========================================
+       RESPONSIVE BREAKPOINTS
+       Aggressive scaling for smaller viewports
+       =========================================== */
+
+    /* Short viewports (< 700px height) */
+    @media (max-height: 700px) {
+        :root {
+            --slide-padding: clamp(0.75rem, 3vw, 2rem);
+            --content-gap: clamp(0.4rem, 1.5vw, 1rem);
+            --title-size: clamp(1.25rem, 4.5vw, 2.5rem);
+            --h2-size: clamp(1rem, 3vw, 1.75rem);
+        }
+    }
+
+    /* Very short viewports (< 600px height) */
+    @media (max-height: 600px) {
+        :root {
+            --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem);
+            --content-gap: clamp(0.3rem, 1vw, 0.75rem);
+            --title-size: clamp(1.1rem, 4vw, 2rem);
+            --body-size: clamp(0.7rem, 1.2vw, 0.95rem);
+        }
+
+        /* Hide non-essential elements */
+        .nav-dots, .keyboard-hint, .decorative {
+            display: none;
+        }
+    }
+
+    /* Extremely short (landscape phones, < 500px height) */
+    @media (max-height: 500px) {
+        :root {
+            --slide-padding: clamp(0.4rem, 2vw, 1rem);
+            --title-size: clamp(1rem, 3.5vw, 1.5rem);
+            --h2-size: clamp(0.9rem, 2.5vw, 1.25rem);
+            --body-size: clamp(0.65rem, 1vw, 0.85rem);
+        }
+    }
+
+    /* Narrow viewports (< 600px width) */
+    @media (max-width: 600px) {
+        :root {
+            --title-size: clamp(1.25rem, 7vw, 2.5rem);
+        }
+
+        /* Stack grids vertically */
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* ===========================================
+       REDUCED MOTION
+       Respect user preferences
+       =========================================== */
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.2s !important;
+        }
+
+        html {
+            scroll-behavior: auto;
+        }
+    }
+
+    /* === GLOBAL SURFACE === */
+    body {
+      background: var(--ink);
+      color: var(--text);
+      font-family: var(--font-body);
+      letter-spacing: 0;
+      scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(71, 200, 145, 0.22), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(240, 185, 91, 0.14), transparent 30%),
+        linear-gradient(135deg, #101513 0%, #1d2c25 54%, #0c1110 100%);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.18;
+      background-image:
+        linear-gradient(rgba(246, 242, 230, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(246, 242, 230, 0.1) 1px, transparent 1px);
+      background-size: clamp(1.6rem, 4vw, 3.6rem) clamp(1.6rem, 4vw, 3.6rem);
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.7), transparent);
+    }
+
+    /* === NAVIGATION === */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: clamp(0.12rem, 0.3vh, 0.24rem);
+      background: linear-gradient(90deg, var(--jade), var(--amber), var(--coral));
+      z-index: 20;
+      transition: width 0.2s var(--ease-out-expo);
+    }
+
+    .nav-dots {
+      position: fixed;
+      right: clamp(0.4rem, 1.2vw, 1rem);
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(0.25rem, 0.7vh, 0.5rem);
+      z-index: 12;
+    }
+
+    .nav-dot {
+      width: clamp(0.34rem, 0.8vw, 0.5rem);
+      height: clamp(0.34rem, 0.8vw, 0.5rem);
+      border: 1px solid rgba(246, 242, 230, 0.6);
+      border-radius: 999px;
+      background: transparent;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .nav-dot.active {
+      transform: scale(1.7);
+      background: var(--jade);
+      border-color: var(--jade);
+    }
+
+    .slide-index {
+      position: absolute;
+      top: var(--slide-padding);
+      left: var(--slide-padding);
+      color: var(--muted);
+      font-size: var(--small-size);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(0.35rem, 0.8vw, 0.7rem);
+      color: var(--jade);
+      font-size: var(--small-size);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .section-kicker::before {
+      content: "";
+      width: clamp(1.4rem, 3vw, 3.2rem);
+      height: 1px;
+      background: currentColor;
+    }
+
+    /* === TYPOGRAPHY === */
+    h1, h2 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    h1 {
+      font-size: var(--title-size);
+      max-width: min(92vw, 1050px);
+    }
+
+    h2 {
+      font-size: var(--h2-size);
+      max-width: min(88vw, 980px);
+    }
+
+    h3 {
+      font-size: var(--h3-size);
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p {
+      font-size: var(--body-size);
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 900;
+    }
+
+    /* === ANIMATIONS === */
+    .reveal {
+      opacity: 0;
+      transform: translateY(clamp(1rem, 3vh, 2rem));
+      transition: opacity var(--duration-normal) var(--ease-out-expo),
+        transform var(--duration-normal) var(--ease-out-expo);
+    }
+
+    .slide.visible .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal:nth-child(1) { transition-delay: 0.05s; }
+    .reveal:nth-child(2) { transition-delay: 0.14s; }
+    .reveal:nth-child(3) { transition-delay: 0.23s; }
+    .reveal:nth-child(4) { transition-delay: 0.32s; }
+    .reveal:nth-child(5) { transition-delay: 0.41s; }
+    .reveal:nth-child(6) { transition-delay: 0.5s; }
+
+    /* === REUSABLE LAYOUTS === */
+    .slide-content {
+      gap: var(--content-gap);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(1rem, 3vw, 3rem);
+      align-items: center;
+      max-height: min(78vh, 760px);
+    }
+
+    .paper {
+      background: var(--panel);
+      color: var(--paper-text);
+      border-radius: var(--radius);
+      padding: clamp(0.8rem, 2vw, 1.8rem);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .paper p,
+    .paper .muted,
+    .paper li {
+      color: var(--paper-muted);
+    }
+
+    .paper .soft-list li {
+      color: var(--paper-text);
+    }
+
+    .statement {
+      width: min(92vw, 1080px);
+      padding: clamp(1rem, 2.4vw, 2rem);
+      border-left: clamp(0.25rem, 0.7vw, 0.5rem) solid var(--jade);
+      background: rgba(246, 242, 230, 0.09);
+    }
+
+    .statement p {
+      color: var(--text);
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 2vw, 1.9rem);
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(0.5rem, 1.3vw, 1rem);
+      max-height: min(54vh, 520px);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(0.55rem, 1.3vw, 1.05rem);
+    }
+
+    .tile {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: clamp(0.65rem, 1.3vw, 1.05rem);
+      background: rgba(246, 242, 230, 0.07);
+      min-height: clamp(5.2rem, 14vh, 7.7rem);
+      overflow: hidden;
+    }
+
+    .tile b {
+      display: block;
+      color: var(--text);
+      font-size: clamp(0.86rem, 1.25vw, 1.12rem);
+      margin-bottom: clamp(0.25rem, 0.55vw, 0.45rem);
+    }
+
+    .tile span,
+    .tile li {
+      color: var(--muted);
+      font-size: clamp(0.68rem, 0.96vw, 0.9rem);
+      line-height: 1.48;
+    }
+
+    .tile.accent-jade { border-color: rgba(71, 200, 145, 0.7); }
+    .tile.accent-amber { border-color: rgba(240, 185, 91, 0.7); }
+    .tile.accent-coral { border-color: rgba(239, 111, 94, 0.7); }
+    .tile.accent-blue { border-color: rgba(106, 168, 255, 0.7); }
+
+    .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: clamp(1.6rem, 3vw, 2.35rem);
+      height: clamp(1.6rem, 3vw, 2.35rem);
+      margin-bottom: clamp(0.35rem, 0.8vw, 0.65rem);
+      border-radius: 999px;
+      background: var(--jade);
+      color: #0c1511;
+      font-weight: 900;
+      font-size: var(--small-size);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(0.35rem, 0.8vw, 0.65rem);
+      max-height: min(18vh, 150px);
+      overflow: hidden;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      background: rgba(246, 242, 230, 0.09);
+      color: var(--text);
+      border-radius: 999px;
+      padding: clamp(0.28rem, 0.65vw, 0.52rem) clamp(0.55rem, 1.1vw, 0.9rem);
+      font-size: var(--small-size);
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .soft-list {
+      display: grid;
+      gap: clamp(0.45rem, 1vh, 0.85rem);
+      list-style: none;
+      max-height: min(52vh, 470px);
+      overflow: hidden;
+    }
+
+    .soft-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(0.45rem, 0.9vw, 0.75rem);
+      align-items: start;
+      font-size: var(--body-size);
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .soft-list li::before {
+      content: "";
+      width: clamp(0.42rem, 0.9vw, 0.62rem);
+      height: clamp(0.42rem, 0.9vw, 0.62rem);
+      margin-top: clamp(0.35rem, 0.7vw, 0.48rem);
+      border-radius: 999px;
+      background: var(--amber);
+    }
+
+    /* === TITLE SLIDE === */
+    .title-slide .slide-content {
+      justify-content: flex-end;
+      padding-bottom: clamp(2.2rem, 9vh, 6rem);
+    }
+
+    .brand-mark {
+      position: absolute;
+      top: var(--slide-padding);
+      right: var(--slide-padding);
+      display: grid;
+      place-items: center;
+      width: clamp(3rem, 8vw, 7rem);
+      aspect-ratio: 1;
+      border: 1px solid var(--line);
+      font-weight: 900;
+      font-size: clamp(0.75rem, 1.6vw, 1.4rem);
+      color: var(--jade);
+      background:
+        linear-gradient(135deg, rgba(71, 200, 145, 0.22), transparent),
+        rgba(246, 242, 230, 0.05);
+    }
+
+    .title-subtitle {
+      max-width: min(86vw, 760px);
+      margin-top: clamp(0.8rem, 2vh, 1.4rem);
+      color: var(--muted);
+      font-size: clamp(0.95rem, 1.8vw, 1.35rem);
+    }
+
+    .title-line {
+      width: min(62vw, 680px);
+      height: clamp(0.32rem, 1vh, 0.55rem);
+      margin-top: clamp(1rem, 3vh, 2rem);
+      background: linear-gradient(90deg, var(--jade), var(--amber), var(--coral), transparent);
+    }
+
+    /* === MAP / DIAGRAMS === */
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(0.45rem, 1vw, 0.8rem);
+      align-items: stretch;
+    }
+
+    .flow-step {
+      position: relative;
+      border: 1px solid var(--line);
+      padding: clamp(0.65rem, 1.2vw, 1rem);
+      background: rgba(246, 242, 230, 0.08);
+      min-height: clamp(4.5rem, 12vh, 6.4rem);
+    }
+
+    .flow-step::after {
+      content: "";
+      position: absolute;
+      right: calc(-1 * clamp(0.32rem, 0.8vw, 0.55rem));
+      top: 50%;
+      width: clamp(0.55rem, 1vw, 0.8rem);
+      height: 1px;
+      background: var(--jade);
+    }
+
+    .flow-step:last-child::after {
+      display: none;
+    }
+
+    .flow-step b {
+      display: block;
+      font-size: clamp(0.78rem, 1.08vw, 0.98rem);
+      margin-bottom: clamp(0.25rem, 0.6vw, 0.45rem);
+    }
+
+    .flow-step span {
+      color: var(--muted);
+      font-size: clamp(0.62rem, 0.8vw, 0.78rem);
+      line-height: 1.4;
+    }
+
+    .lifecycle {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: clamp(0.4rem, 1vw, 0.7rem);
+    }
+
+    .stage {
+      min-height: clamp(6rem, 18vh, 9.5rem);
+      border: 1px solid var(--line);
+      background: rgba(246, 242, 230, 0.075);
+      padding: clamp(0.55rem, 1.1vw, 0.9rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stage .dot {
+      width: clamp(0.65rem, 1vw, 0.9rem);
+      aspect-ratio: 1;
+      border-radius: 999px;
+      background: var(--jade);
+      box-shadow: 0 0 0 clamp(0.18rem, 0.35vw, 0.28rem) rgba(71, 200, 145, 0.18);
+    }
+
+    .stage b {
+      font-size: clamp(0.72rem, 1vw, 0.95rem);
+      line-height: 1.25;
+    }
+
+    .stage span {
+      color: var(--muted);
+      font-size: clamp(0.58rem, 0.75vw, 0.74rem);
+      line-height: 1.35;
+    }
+
+    .task-board {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: clamp(0.65rem, 1.5vw, 1.2rem);
+      align-items: stretch;
+      max-height: min(58vh, 560px);
+    }
+
+    .task-list {
+      display: grid;
+      gap: clamp(0.38rem, 0.8vh, 0.7rem);
+      list-style: none;
+    }
+
+    .task-list li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(24, 32, 28, 0.12);
+      padding: clamp(0.36rem, 0.75vh, 0.62rem) 0;
+      color: var(--paper-text);
+      font-size: clamp(0.7rem, 0.96vw, 0.88rem);
+      line-height: 1.3;
+    }
+
+    .task-list em {
+      font-style: normal;
+      color: var(--coral);
+      font-weight: 900;
+    }
+
+    .backend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(0.45rem, 1vw, 0.8rem);
+      max-height: min(58vh, 560px);
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(0.65rem, 1.4vw, 1.1rem);
+      align-items: stretch;
+    }
+
+    .phase {
+      position: relative;
+      border-top: clamp(0.24rem, 0.5vw, 0.36rem) solid var(--jade);
+      background: rgba(246, 242, 230, 0.08);
+      padding: clamp(0.75rem, 1.5vw, 1.2rem);
+      min-height: clamp(14rem, 44vh, 22rem);
+      overflow: hidden;
+    }
+
+    .phase:nth-child(2) { border-color: var(--amber); }
+    .phase:nth-child(3) { border-color: var(--coral); }
+
+    .phase small {
+      color: var(--muted);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+    }
+
+    .phase ul {
+      margin-top: clamp(0.7rem, 1.4vw, 1rem);
+      display: grid;
+      gap: clamp(0.35rem, 0.8vh, 0.62rem);
+      list-style: none;
+    }
+
+    .phase li {
+      color: var(--muted);
+      font-size: clamp(0.68rem, 0.95vw, 0.88rem);
+      line-height: 1.45;
+    }
+
+    .risk-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(0.55rem, 1.2vw, 0.95rem);
+      max-height: min(58vh, 560px);
+    }
+
+    .risk {
+      border-left: clamp(0.18rem, 0.42vw, 0.32rem) solid var(--coral);
+      background: rgba(246, 242, 230, 0.08);
+      padding: clamp(0.7rem, 1.4vw, 1rem);
+    }
+
+    .risk b {
+      display: block;
+      margin-bottom: clamp(0.28rem, 0.6vw, 0.48rem);
+      color: var(--text);
+      font-size: clamp(0.76rem, 1.05vw, 0.98rem);
+    }
+
+    .risk span {
+      color: var(--muted);
+      font-size: clamp(0.66rem, 0.9vw, 0.86rem);
+      line-height: 1.45;
+    }
+
+    /* === SPECIAL SLIDES === */
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: clamp(0.65rem, 1.6vw, 1.4rem);
+      align-items: center;
+      max-height: min(55vh, 520px);
+    }
+
+    .arrow-chip {
+      width: clamp(2.4rem, 5vw, 4.5rem);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--jade);
+      color: #07100c;
+      font-size: clamp(1.1rem, 2.4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .quote-slide .statement {
+      width: min(90vw, 980px);
+      margin-top: clamp(0.4rem, 1.5vh, 1rem);
+    }
+
+    .final-sentence {
+      max-width: min(90vw, 1060px);
+      font-family: var(--font-display);
+      font-size: clamp(1.18rem, 2.45vw, 2.45rem);
+      line-height: 1.55;
+      color: var(--text);
+      padding-left: clamp(0.8rem, 1.8vw, 1.6rem);
+      border-left: clamp(0.25rem, 0.6vw, 0.45rem) solid var(--amber);
+    }
+
+    /* === RESPONSIVE OVERRIDES === */
+    @media (max-width: 900px) {
+      .two-col,
+      .task-board,
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+
+      .mini-grid,
+      .metric-grid,
+      .backend-grid,
+      .roadmap,
+      .risk-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .lifecycle {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .arrow-chip {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .mini-grid,
+      .metric-grid,
+      .backend-grid,
+      .roadmap,
+      .risk-list,
+      .lifecycle,
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .stage,
+      .tile,
+      .phase {
+        min-height: auto;
+      }
+
+      .brand-mark {
+        opacity: 0.45;
+      }
+    }
+
+    @media (max-height: 700px) {
+      p { line-height: 1.45; }
+      .tile { min-height: clamp(4.3rem, 13vh, 6.2rem); }
+      .phase { min-height: clamp(11rem, 42vh, 18rem); }
+      .stage { min-height: clamp(4.8rem, 16vh, 7rem); }
+    }
+
+    @media (max-height: 560px) {
+      .tag-row,
+      .soft-list,
+      .backend-grid,
+      .task-board,
+      .risk-list {
+        max-height: min(48vh, 360px);
+      }
+
+      .tile span,
+      .tile li,
+      .risk span,
+      .phase li {
+        line-height: 1.32;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <nav class="nav-dots" id="navDots" aria-label="幻灯片导航"></nav>
+
+  <!-- === SLIDE 1: TITLE === -->
+  <section class="slide title-slide">
+    <div class="brand-mark decorative">LITTA</div>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Product Planning</span>
+      <h1 class="reveal">LITTA 客户端<br>产品规划思考</h1>
+      <p class="title-subtitle reveal">围绕教练服务效率、学员体验与续费增长</p>
+      <div class="title-line reveal"></div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 2: INITIAL UNDERSTANDING === -->
+  <section class="slide">
+    <span class="slide-index">02 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Initial Read</span>
+      <h2 class="reveal">我对 LITTA 客户端的初步理解</h2>
+      <div class="comparison reveal">
+        <div class="paper">
+          <h3>当前能力</h3>
+          <ul class="soft-list">
+            <li>课程规划、饮食规划、内容宣传</li>
+            <li>学员训练记录与阶段服务沉淀</li>
+            <li>主要解决教练服务交付效率</li>
+          </ul>
+        </div>
+        <div class="arrow-chip">→</div>
+        <div class="paper">
+          <h3>下一阶段机会</h3>
+          <ul class="soft-list">
+            <li>从服务交付工具延伸为客户经营工具</li>
+            <li>系统维护学员关系、活跃与续费</li>
+            <li>把经营动作变成可配置、可度量能力</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 3: INSIGHT ONE === -->
+  <section class="slide">
+    <span class="slide-index">03 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Insight 01</span>
+      <h2 class="reveal">优秀教练不只靠专业性，也靠客户关系维护</h2>
+      <div class="mini-grid reveal">
+        <div class="tile accent-jade">
+          <span class="number">A</span>
+          <b>专业服务</b>
+          <span>训练计划、饮食建议、动作指导、阶段复盘。</span>
+        </div>
+        <div class="tile accent-amber">
+          <span class="number">B</span>
+          <b>关系维护</b>
+          <span>新客信任、日常陪伴、情绪激励、续费沟通、沉默唤醒。</span>
+        </div>
+        <div class="tile accent-coral">
+          <span class="number">C</span>
+          <b>产品机会</b>
+          <span>把优秀教练的客户经营方法沉淀为可复用工具。</span>
+        </div>
+      </div>
+      <div class="statement reveal">
+        <p>很多教练专业能力不错，但客户维护仍依赖个人经验。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 4: INSIGHT TWO === -->
+  <section class="slide quote-slide">
+    <span class="slide-index">04 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Insight 02</span>
+      <h2 class="reveal">效率提升不能削弱私教服务价值感</h2>
+      <div class="statement reveal">
+        <p>工具可以提升响应速度，但学员真正购买的是“教练本人关注我、理解我、为我判断”。</p>
+      </div>
+      <div class="flow reveal">
+        <div class="flow-step"><b>幕后提效</b><span>提醒、归因、建议、记录。</span></div>
+        <div class="flow-step"><b>人工确认</b><span>关键话术与判断由教练决定。</span></div>
+        <div class="flow-step"><b>前台信任</b><span>学员感受到教练更懂自己。</span></div>
+        <div class="flow-step"><b>价值保留</b><span>工具增强教练，而不是取代教练。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 5: PROBLEM DEFINITION === -->
+  <section class="slide">
+    <span class="slide-index">05 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Problem</span>
+      <h2 class="reveal">问题定义</h2>
+      <div class="statement reveal">
+        <p>如何让客户端既能提升教练服务与经营效率，又能保留学员对私教服务的价值感，并最终提升续费和复购？</p>
+      </div>
+      <div class="mini-grid reveal">
+        <div class="tile accent-jade"><b>关键节点</b><span>如何帮助教练主动维护学员？</span></div>
+        <div class="tile accent-amber"><b>服务温度</b><span>如何让学员感受到个性化服务？</span></div>
+        <div class="tile accent-blue"><b>中后台沉淀</b><span>如何形成可配置、可复制、可度量的经营方法？</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 6: LIFECYCLE === -->
+  <section class="slide">
+    <span class="slide-index">06 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Solution 01</span>
+      <h2 class="reveal">学员生命周期经营</h2>
+      <div class="lifecycle reveal">
+        <div class="stage"><span class="dot"></span><b>新成交</b><span>7 天信任建立计划</span></div>
+        <div class="stage"><span class="dot"></span><b>首课后</b><span>训练反馈与鼓励</span></div>
+        <div class="stage"><span class="dot"></span><b>稳定训练期</b><span>阶段复盘、目标调整</span></div>
+        <div class="stage"><span class="dot"></span><b>打卡下降</b><span>原因询问、激励提醒</span></div>
+        <div class="stage"><span class="dot"></span><b>快到期</b><span>成果总结、续费铺垫</span></div>
+        <div class="stage"><span class="dot"></span><b>沉默风险</b><span>唤醒任务与关怀建议</span></div>
+      </div>
+      <div class="tag-row reveal">
+        <span class="tag">跟进提醒</span>
+        <span class="tag">沟通建议</span>
+        <span class="tag">任务清单</span>
+        <span class="tag">服务记录</span>
+        <span class="tag">效果追踪</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 7: VALUE PERCEPTION === -->
+  <section class="slide">
+    <span class="slide-index">07 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Solution 02</span>
+      <h2 class="reveal">教练服务价值感设计</h2>
+      <div class="two-col reveal">
+        <ul class="soft-list">
+          <li>工具在幕后提效，教练在前台建立信任。</li>
+          <li>系统提供提醒和建议，最终表达由教练确认。</li>
+          <li>高价值关系场景优先保留人工判断。</li>
+          <li>让学员感受到“教练更懂我”。</li>
+        </ul>
+        <div class="paper">
+          <h3>场景示例</h3>
+          <ul class="task-list">
+            <li><span>训练疲劳</span><em>关注恢复</em></li>
+            <li><span>课程快到期</span><em>阶段复盘</em></li>
+            <li><span>学员沉默</span><em>先关怀近况</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 8: TASK CENTER === -->
+  <section class="slide">
+    <span class="slide-index">08 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Solution 03</span>
+      <h2 class="reveal">教练经营任务中心</h2>
+      <div class="task-board reveal">
+        <div class="paper">
+          <h3>任务类型</h3>
+          <ul class="task-list">
+            <li><span>今日待跟进学员</span><em>12</em></li>
+            <li><span>快到期学员</span><em>5</em></li>
+            <li><span>连续缺课学员</span><em>3</em></li>
+            <li><span>首课后待反馈学员</span><em>4</em></li>
+            <li><span>表现下降 / 高意向续费</span><em>8</em></li>
+          </ul>
+        </div>
+        <div class="mini-grid">
+          <div class="tile accent-jade"><b>状态摘要</b><span>关键标签、阶段、近期行为。</span></div>
+          <div class="tile accent-amber"><b>推荐动作</b><span>关怀、复盘、提醒、续费铺垫。</span></div>
+          <div class="tile accent-blue"><b>历史记录</b><span>沟通、训练、饮食、反馈。</span></div>
+          <div class="tile accent-coral"><b>结果记录</b><span>完成情况、学员反馈。</span></div>
+          <div class="tile"><b>下次提醒</b><span>自动生成下一步跟进节点。</span></div>
+          <div class="tile"><b>优先级</b><span>让教练先处理最值得处理的人。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 9: BACKEND CAPABILITIES === -->
+  <section class="slide">
+    <span class="slide-index">09 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Middle & Back Office</span>
+      <h2 class="reveal">中后台能力设计</h2>
+      <div class="backend-grid reveal">
+        <div class="tile accent-jade"><b>学员标签体系</b><span>目标、频率、阶段、风险、偏好、消费状态。</span></div>
+        <div class="tile accent-amber"><b>生命周期规则</b><span>新客天数、剩余课节、未训练时长触发。</span></div>
+        <div class="tile accent-blue"><b>跟进任务规则</b><span>任务类型、优先级、负责人、完成标准。</span></div>
+        <div class="tile accent-coral"><b>沟通模板库</b><span>欢迎、首课反馈、复盘、续费、沉默唤醒。</span></div>
+        <div class="tile"><b>服务策略配置</b><span>按门店、会员类型、课程类型差异化配置。</span></div>
+        <div class="tile"><b>数据看板</b><span>跟进率、完成率、续费率、活跃变化。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 10: METRICS === -->
+  <section class="slide">
+    <span class="slide-index">10 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Metrics</span>
+      <h2 class="reveal">指标设计</h2>
+      <div class="metric-grid reveal">
+        <div class="tile accent-jade">
+          <b>教练效率</b>
+          <span>跟进任务完成率、平均响应时长、教练人均服务学员数、服务记录完整率。</span>
+        </div>
+        <div class="tile accent-amber">
+          <b>学员体验</b>
+          <span>学员互动率、打卡率、训练计划执行率、满意度 / NPS。</span>
+        </div>
+        <div class="tile accent-coral">
+          <b>业务结果</b>
+          <span>到期前沟通覆盖率、续费率、沉默学员唤醒率、课包复购率。</span>
+        </div>
+      </div>
+      <div class="statement reveal">
+        <p>从“动作有没有做”到“关系有没有变好”，再到“续费有没有提升”。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 11: RISKS === -->
+  <section class="slide">
+    <span class="slide-index">11 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Risk Control</span>
+      <h2 class="reveal">风险与应对</h2>
+      <div class="risk-list reveal">
+        <div class="risk"><b>工具感过强，削弱私教价值感</b><span>系统做幕后提醒，教练做前台表达。</span></div>
+        <div class="risk"><b>教练觉得增加操作负担</b><span>任务自动生成，跟进动作轻量化，减少手动录入。</span></div>
+        <div class="risk"><b>续费沟通太销售化</b><span>先做训练成果复盘和目标调整，再自然引出续费。</span></div>
+        <div class="risk"><b>不同门店经营方法不同</b><span>后台支持策略配置，而不是一套规则全量套用。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 12: EXPERIENCE FIT === -->
+  <section class="slide">
+    <span class="slide-index">12 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Experience Fit</span>
+      <h2 class="reveal">与我过往经验的匹配</h2>
+      <div class="mini-grid reveal">
+        <div class="tile accent-jade"><b>订单交付线上化</b><span>线下服务流程抽象、状态流转、异常处理。</span></div>
+        <div class="tile accent-blue"><b>客户 / 门店 / 设备后台</b><span>多角色、多对象关系建模。</span></div>
+        <div class="tile accent-amber"><b>AI 降本项目</b><span>效率工具、工作流设计、人工确认与效果评估。</span></div>
+        <div class="tile accent-coral"><b>客户培训和 SOP</b><span>把优秀经验沉淀成可复制流程。</span></div>
+        <div class="tile"><b>岗位连接点</b><span>前台体验与中后台配置能力并重。</span></div>
+        <div class="tile"><b>落地方式</b><span>先抓高价值场景，再做规则化与规模化。</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SLIDE 13: SUMMARY === -->
+  <section class="slide">
+    <span class="slide-index">13 / 13</span>
+    <div class="slide-content">
+      <span class="section-kicker reveal">Summary</span>
+      <h2 class="reveal">总结</h2>
+      <p class="final-sentence reveal">
+        LITTA 客户端可以不只是帮助教练完成一次课程服务，而是帮助教练持续经营学员关系；中后台则负责把这些经营方法沉淀成规则、标签、任务、模板和数据能力，最终提升教练人效、学员体验和续费转化。
+      </p>
+      <div class="tag-row reveal">
+        <span class="tag">服务效率</span>
+        <span class="tag">学员体验</span>
+        <span class="tag">续费增长</span>
+        <span class="tag">经营闭环</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    /* === SLIDE PRESENTATION CONTROLLER === */
+    class SlidePresentation {
+      constructor() {
+        this.slides = Array.from(document.querySelectorAll(".slide"));
+        this.currentSlide = 0;
+        this.navDotsContainer = document.getElementById("navDots");
+        this.progressBar = document.getElementById("progressBar");
+        this.touchStartY = 0;
+        this.wheelLocked = false;
+        this.setupIntersectionObserver();
+        this.setupKeyboardNav();
+        this.setupTouchNav();
+        this.setupWheelNav();
+        this.setupNavDots();
+        this.updateState();
+      }
+
+      setupIntersectionObserver() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              this.currentSlide = this.slides.indexOf(entry.target);
+              this.updateState();
+            }
+          });
+        }, { threshold: 0.58 });
+
+        this.slides.forEach((slide) => observer.observe(slide));
+      }
+
+      setupKeyboardNav() {
+        window.addEventListener("keydown", (event) => {
+          const nextKeys = ["ArrowDown", "ArrowRight", " ", "PageDown"];
+          const previousKeys = ["ArrowUp", "ArrowLeft", "PageUp"];
+          if (nextKeys.includes(event.key)) {
+            event.preventDefault();
+            this.goToSlide(this.currentSlide + 1);
+          }
+          if (previousKeys.includes(event.key)) {
+            event.preventDefault();
+            this.goToSlide(this.currentSlide - 1);
+          }
+          if (event.key === "Home") this.goToSlide(0);
+          if (event.key === "End") this.goToSlide(this.slides.length - 1);
+        });
+      }
+
+      setupTouchNav() {
+        window.addEventListener("touchstart", (event) => {
+          this.touchStartY = event.touches[0].clientY;
+        }, { passive: true });
+
+        window.addEventListener("touchend", (event) => {
+          const delta = this.touchStartY - event.changedTouches[0].clientY;
+          if (Math.abs(delta) > 44) {
+            this.goToSlide(this.currentSlide + (delta > 0 ? 1 : -1));
+          }
+        }, { passive: true });
+      }
+
+      setupWheelNav() {
+        window.addEventListener("wheel", (event) => {
+          if (this.wheelLocked || Math.abs(event.deltaY) < 32) return;
+          this.wheelLocked = true;
+          this.goToSlide(this.currentSlide + (event.deltaY > 0 ? 1 : -1));
+          window.setTimeout(() => {
+            this.wheelLocked = false;
+          }, 620);
+        }, { passive: true });
+      }
+
+      setupNavDots() {
+        this.navDotsContainer.innerHTML = "";
+        this.slides.forEach((_, index) => {
+          const dot = document.createElement("button");
+          dot.className = "nav-dot";
+          dot.type = "button";
+          dot.setAttribute("aria-label", `跳转到第 ${index + 1} 页`);
+          dot.addEventListener("click", () => this.goToSlide(index));
+          this.navDotsContainer.appendChild(dot);
+        });
+      }
+
+      goToSlide(index) {
+        const targetIndex = Math.max(0, Math.min(index, this.slides.length - 1));
+        this.slides[targetIndex].scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      updateState() {
+        const progress = ((this.currentSlide + 1) / this.slides.length) * 100;
+        this.progressBar.style.width = `${progress}%`;
+        Array.from(this.navDotsContainer.children).forEach((dot, index) => {
+          dot.classList.toggle("active", index === this.currentSlide);
+        });
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      new SlidePresentation();
+      document.querySelector(".slide")?.classList.add("visible");
+    });
+  </script>
+</body>
+</html>

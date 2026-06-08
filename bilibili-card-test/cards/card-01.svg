@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<rect width="900" height="1200" fill="#D7EEF8"/>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.035"/></feComponentTransfer></filter>
+<rect width="900" height="1200" filter="url(#grain)" opacity="0.55"/>
+<rect x="482" y="238" width="418" height="760" fill="#FFFDF8" opacity="0.95"/>
+<rect x="0" y="914" width="900" height="286" fill="#F8FBF8" opacity="0.92"/>
+<rect x="632" y="520" width="150" height="240" fill="#8A562E" opacity="0.9"/>
+<path d="M0 740 C220 710 320 750 482 712" fill="none" stroke="#176A98" stroke-width="3" opacity="0.28"/>
+<rect x="48" y="66" width="804" height="1080" rx="26" fill="#FFFEF8" fill-opacity="0.92" stroke="#DCE8EA" stroke-width="1.5"/>
+<rect x="72" y="142" width="92" height="6" fill="#8A562E" opacity="0.88"/>
+<text x="72" y="178" font-size="28" font-weight="700" fill="#1685C0" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">核心观点</text>
+<text x="828" y="178" font-size="24" fill="#687A86" text-anchor="end" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">1/6</text>
+<text x="72" y="258" font-size="56" font-weight="800" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">Codex 是能上手干活的 AI</text>
+<text x="72" y="332" font-size="56" font-weight="800" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">桌面助手</text>
+<line x1="72" y1="436" x2="828" y2="436" stroke="#DCE8EA" stroke-width="2"/>
+<text x="72" y="494" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 它不只是聊天，而是能操作文件、开发项目、</text>
+<text x="72" y="548" font-size="34" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">  连接工具</text>
+<text x="72" y="594" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 零基础用户也能从安装配置一路学到实战玩法</text>
+<text x="72" y="648" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 重点不是懂多少代码，而是把任务拆清楚交给</text>
+<text x="72" y="702" font-size="34" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">   AI 执行</text>
+<line x1="72" y1="1052" x2="828" y2="1052" stroke="#DCE8EA" stroke-width="2"/>
+<text x="72" y="1096" font-size="24" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">基于 B 站公开简介整理</text>
+</svg>

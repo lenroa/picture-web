@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<rect width="900" height="1200" fill="#16211D"/>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.035"/></feComponentTransfer></filter>
+<rect width="900" height="1200" filter="url(#grain)" opacity="0.55"/>
+<rect x="26" y="26" width="852" height="1148" fill="none" stroke="#0D1110" stroke-width="22" opacity="0.9"/>
+<rect x="94" y="108" width="128" height="260" fill="#A8D5E0" opacity="0.28"/>
+<rect x="238" y="108" width="128" height="260" fill="#A8D5E0" opacity="0.18"/>
+<rect x="72" y="830" width="756" height="12" fill="#A46A2A" opacity="0.72"/>
+<rect x="48" y="66" width="804" height="1080" rx="26" fill="#EFE6D3" fill-opacity="0.92" stroke="#C9BDA4" stroke-width="1.5"/>
+<rect x="72" y="118" width="92" height="6" fill="#A46A2A" opacity="0.88"/>
+<text x="72" y="154" font-size="28" font-weight="700" fill="#0F6A55" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">什么是道理</text>
+<text x="828" y="154" font-size="24" fill="#667066" text-anchor="end" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">3/6</text>
+<text x="72" y="234" font-size="56" font-weight="800" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">书只是道理的一种载体</text>
+<line x1="72" y1="338" x2="828" y2="338" stroke="#C9BDA4" stroke-width="2"/>
+<text x="72" y="396" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 上课、写小说、做喜剧、和朋友聊天也在讲道</text>
+<text x="72" y="450" font-size="34" font-weight="400" fill="#667066" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">  理</text>
+<text x="72" y="496" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 不同形式会把同一个问题讲出不同温度</text>
+<text x="72" y="550" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 真正有用的道理，应该能进入人的日常处境</text>
+<line x1="72" y1="1052" x2="828" y2="1052" stroke="#C9BDA4" stroke-width="2"/>
+<text x="72" y="1096" font-size="24" font-weight="400" fill="#667066" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">基于公开简介整理</text>
+</svg>

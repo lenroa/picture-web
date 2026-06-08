@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<rect width="900" height="1200" fill="#D7EEF8"/>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.035"/></feComponentTransfer></filter>
+<rect width="900" height="1200" filter="url(#grain)" opacity="0.55"/>
+<rect x="482" y="238" width="418" height="760" fill="#FFFDF8" opacity="0.95"/>
+<rect x="0" y="914" width="900" height="286" fill="#F8FBF8" opacity="0.92"/>
+<rect x="632" y="520" width="150" height="240" fill="#8A562E" opacity="0.9"/>
+<path d="M0 740 C220 710 320 750 482 712" fill="none" stroke="#176A98" stroke-width="3" opacity="0.28"/>
+<rect x="48" y="66" width="804" height="1080" rx="26" fill="#FFFEF8" fill-opacity="0.92" stroke="#DCE8EA" stroke-width="1.5"/>
+<rect x="72" y="142" width="92" height="6" fill="#8A562E" opacity="0.88"/>
+<text x="72" y="178" font-size="28" font-weight="700" fill="#1685C0" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">怎么开始</text>
+<text x="828" y="178" font-size="24" fill="#687A86" text-anchor="end" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">6/6</text>
+<text x="72" y="258" font-size="56" font-weight="800" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">别先学全部功能，先挑一个真</text>
+<text x="72" y="332" font-size="56" font-weight="800" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">实任务</text>
+<line x1="72" y1="436" x2="828" y2="436" stroke="#DCE8EA" stroke-width="2"/>
+<text x="72" y="494" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 想学编程：让它改一个小页面</text>
+<text x="72" y="548" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 想办公提效：让它整理文件或自动生成资料</text>
+<text x="72" y="602" font-size="34" font-weight="600" fill="#173044" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 想进阶：再研究</text>
+<text x="72" y="656" font-size="34" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">  Skills、MCP、部署和自动化</text>
+<rect x="72" y="684" width="756" height="118" rx="18" fill="#D7EEF8" fill-opacity="0.42" stroke="#DCE8EA"/>
+<text x="98" y="718" font-size="28" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">这版未读取到字幕，适合作为模板测试；拿到字幕后可</text>
+<text x="98" y="758" font-size="28" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">以生成更准确的逐段笔记。</text>
+<line x1="72" y1="1052" x2="828" y2="1052" stroke="#DCE8EA" stroke-width="2"/>
+<text x="72" y="1096" font-size="24" font-weight="400" fill="#687A86" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">来源：Bilibili BV1eNGR6rETx</text>
+</svg>

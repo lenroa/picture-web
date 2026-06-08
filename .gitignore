@@ -27,3 +27,9 @@ temp/
 .env
 .env.*
 !.env.example
+
+# Local auth artifacts and personal job-search notes
+feishu-*-qrcode.png
+feishu-doc-export/
+*简历*.md
+*投递*.md

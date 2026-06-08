@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+<rect width="900" height="1200" fill="#16211D"/>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.035"/></feComponentTransfer></filter>
+<rect width="900" height="1200" filter="url(#grain)" opacity="0.55"/>
+<rect x="26" y="26" width="852" height="1148" fill="none" stroke="#0D1110" stroke-width="22" opacity="0.9"/>
+<rect x="94" y="108" width="128" height="260" fill="#A8D5E0" opacity="0.28"/>
+<rect x="238" y="108" width="128" height="260" fill="#A8D5E0" opacity="0.18"/>
+<rect x="72" y="830" width="756" height="12" fill="#A46A2A" opacity="0.72"/>
+<rect x="48" y="66" width="804" height="1080" rx="26" fill="#EFE6D3" fill-opacity="0.92" stroke="#C9BDA4" stroke-width="1.5"/>
+<rect x="72" y="118" width="92" height="6" fill="#A46A2A" opacity="0.88"/>
+<text x="72" y="154" font-size="28" font-weight="700" fill="#0F6A55" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">读得多</text>
+<text x="828" y="154" font-size="24" fill="#667066" text-anchor="end" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">4/6</text>
+<text x="72" y="234" font-size="56" font-weight="800" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">知识可能照亮人，也可能让人</text>
+<text x="72" y="308" font-size="56" font-weight="800" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">傲慢</text>
+<line x1="72" y1="412" x2="828" y2="412" stroke="#C9BDA4" stroke-width="2"/>
+<text x="72" y="470" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 视频标题提出一个反问：读书会让人聪明还是</text>
+<text x="72" y="524" font-size="34" font-weight="400" fill="#667066" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">  傲慢</text>
+<text x="72" y="570" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 答案不在书本数量，而在读完后如何看待他人</text>
+<text x="72" y="624" font-size="34" font-weight="600" fill="#18231F" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">• 如果只用知识证明自己高明，读书也会变成隔</text>
+<text x="72" y="678" font-size="34" font-weight="400" fill="#667066" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">  阂</text>
+<line x1="72" y1="1052" x2="828" y2="1052" stroke="#C9BDA4" stroke-width="2"/>
+<text x="72" y="1096" font-size="24" font-weight="400" fill="#667066" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">基于标题与简介整理</text>
+</svg>

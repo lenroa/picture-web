@@ -1,0 +1,91 @@
+AI Builders Digest - 2026-05-17
+
+Feed note: the live central feed fetch hit a local Node certificate-chain error, so this run uses the Follow Builders cached feed generated at 2026-05-17 15:17 Asia/Shanghai.
+
+X / TWITTER
+
+AI engineer and Latent Space-affiliated builder Swyx said AI Engineer is coming to India soon. The post is light on details, but it signals the AI Engineer community/event footprint expanding beyond its current hubs.
+https://x.com/swyx/status/2055889947136237595
+
+AI engineer、Latent Space 相关 builder Swyx 表示 AI Engineer 很快会来到印度。帖子细节不多，但能看出 AI Engineer 社区和活动正在从现有中心继续向外扩展。
+https://x.com/swyx/status/2055889947136237595
+
+Roblox product builder Peter Yang pushed back against the Bay Area tech-status treadmill. His point: travel outside the bubble to remember that life is bigger than leveling, title-chasing, or the company logo on your profile.
+https://x.com/petergyang/status/2055663937061007762
+
+Roblox 产品方向的 Peter Yang 反思了 Bay Area 技术圈的身份焦虑。他的核心意思是：离开这个泡泡去别处看看，会更容易记起生活不只是职级、头衔和你在哪家公司。
+https://x.com/petergyang/status/2055663937061007762
+
+Google product leader Madhu Guru argued that ambition and contentment do not have to fight each other. His useful framing: wealth can create optionality, but happiness is not mechanically determined by the bank account, and chasing from desperation is its own trap.
+https://x.com/realmadhuguru/status/2055708451670798839
+
+Google 产品负责人 Madhu Guru 认为，野心和满足感并不冲突。他给出的有用框架是：财富可以带来选择权，但幸福并不会由银行账户自动决定；从匮乏感和焦虑出发去追逐，本身就是一个陷阱。
+https://x.com/realmadhuguru/status/2055708451670798839
+
+Claude Code builder Thariq compressed a very developer-native point into one line: HTML continues to be undefeated. Read it as a small endorsement of durable, simple primitives in a week where everyone is still layering agents and frameworks on top.
+https://x.com/trq212/status/2055903660476129723
+
+Claude Code builder Thariq 用一句话表达了很程序员的判断：HTML 依然无敌。可以把它理解为对简单、耐用基础能力的一次小小站台，尤其是在大家不断往上叠 agent 和框架的时候。
+https://x.com/trq212/status/2055903660476129723
+
+YC President and CEO Garry Tan made a long pro-building argument against institutional paralysis, using Foucault and Derrida as shorthand for a culture that interrogates systems instead of improving them. Separately, he highlighted GBrain, an MIT-licensed open-source knowledge system for agents that aims to improve personal AI memory with eight cooperating layers.
+https://x.com/garrytan/status/2055674791873630650
+https://x.com/garrytan/status/2055670533451366479
+https://x.com/garrytan/status/2055670797596012657
+
+YC President and CEO Garry Tan 发表了一段很长的“重新开始建设”的观点，批评机构性停滞，并用 Foucault 和 Derrida 作为一种文化隐喻：太多人只会质疑系统，却不去改进系统。他还介绍了 GBrain，一个 MIT 许可证的开源 agent 知识系统，希望用 8 层协作结构改善 personal AI 的记忆能力。
+https://x.com/garrytan/status/2055674791873630650
+https://x.com/garrytan/status/2055670533451366479
+https://x.com/garrytan/status/2055670797596012657
+
+Builder Zara Zhang captured the emotional whiplash of coding agents: one moment you feel omnipotent because you can build almost anything, and the next moment X makes you feel behind everyone else. It is a crisp description of the new builder psychology around AI tooling.
+https://x.com/zarazhangrui/status/2055728641913536762
+
+Builder Zara Zhang 捕捉到了 coding agent 带来的情绪摆动：一会儿觉得自己无所不能，什么都能造；一会儿刷到 X 又觉得所有人都在前面，自己快被浪潮甩下。这很准确地描述了 AI 工具时代 builder 的新心理状态。
+https://x.com/zarazhangrui/status/2055728641913536762
+
+FPV Ventures partner Nikunj Kothari advised young people not to rush into venture unless they are obsessed with the craft of investing. His argument is practical: the best way to learn what excellence looks like is to work inside excellent companies and around excellent founders, then angel invest from that earned context.
+https://x.com/nikunj/status/2055648134819450907
+
+FPV Ventures partner Nikunj Kothari 建议年轻人不要急着去做 VC，除非真的对投资这门手艺极度着迷。他的判断很务实：理解“卓越”最好的方式，是在优秀公司里和优秀创始人一起工作，真正见过产品、设计和运营 excellence，再基于这些经验去做 angel investing。
+https://x.com/nikunj/status/2055648134819450907
+
+OpenClaw and OpenAI builder Peter Steinberger shipped BlackBar 0.2.0 for Blacksmith, adding 24-hour vCPU and workflow graphs, opt-in status/job notifications, richer job rows, and a compact status badge. He also nudged Claude Code users toward “deslop” workflows if they have not switched to Codex.
+https://x.com/steipete/status/2055685581758206139
+https://x.com/steipete/status/2055747016727167035
+
+OpenClaw 和 OpenAI builder Peter Steinberger 发布了面向 Blacksmith 的 BlackBar 0.2.0，新增 24 小时 vCPU 和 workflow 图表、可选的状态/任务通知、更丰富的 job rows，以及紧凑状态徽章。他还提醒 Claude Code 用户，如果还没切到 Codex，可以先做“deslop”工作流。
+https://x.com/steipete/status/2055685581758206139
+https://x.com/steipete/status/2055747016727167035
+
+Every CEO Dan Shipper pushed back on the “AI weakens your abilities” trope with a bicycle analogy: tools can change which muscles you use without making the tool a net negative. He also joked that he is “Codex-pilling” people one text at a time.
+https://x.com/danshipper/status/2055727669900141017
+https://x.com/danshipper/status/2055715359244566552
+
+Every CEO Dan Shipper 用自行车类比回应“AI 会削弱能力”的说法：工具会改变你使用哪些能力，但这不等于工具整体是负面的。他还开玩笑说自己正在一条短信一条短信地把大家“Codex-pilling”。
+https://x.com/danshipper/status/2055727669900141017
+https://x.com/danshipper/status/2055715359244566552
+
+PODCASTS
+
+No Priors - Pax Silica: Inside the Trump Administration's Tech Strategy with US Under Secretary of State for Economic Affairs Jacob Helberg
+
+The Takeaway: Jacob Helberg's AI supply-chain strategy is not “government builds everything,” but “government creates trusted zones and legal frameworks so private companies can build commercially viable supply-chain platforms.”
+
+Jacob Helberg, US Under Secretary of State for Economic Affairs, frames Pax Silica as a 14-country economic-security coalition for the AI supply chain. The concrete example is a 4,000-acre economic security zone in the Philippines, described as a forward-deployed industrial base that combines US legal predictability with Philippine manufacturing strengths. His sharpest point is that AI supply chains are not just chips: they include precision reducers, servo motors, rare earth magnets, actuators, logistics, electricians, data-center inputs, and robotics components.
+
+Helberg contrasts this with China's Belt and Road model. His criticism is that state-owned enterprises and centrally allocated capital can create waste, overpricing, debt traps, and political leverage. The US alternative he describes is a product-centric foreign policy: work with builders and private companies, make the platform commercially viable, and let it live outside government as a private service. One memorable line: “We're not gonna do government operated supply chains because that's not how we shine as a country.”
+
+For AI builders, the practical signal is that supply-chain security is becoming a product surface, not just a policy memo. If robotics, data centers, energy, minerals, logistics, and manufacturing all become constraints on AI scaling, then the next wave of AI infrastructure companies may look much more industrial than software people are used to.
+https://www.youtube.com/watch?v=xjlYpGaxIPA
+
+核心 takeaway：Jacob Helberg 的 AI 供应链战略不是“政府亲自下场建一切”，而是“政府创造可信区域和法律框架，让私营公司去建设商业上可持续的供应链平台”。
+
+美国国务院经济事务副国务卿 Jacob Helberg 将 Pax Silica 定义为一个覆盖 14 个国家的 AI 供应链经济安全联盟。最具体的案例是菲律宾一块 4,000 英亩的 economic security zone，也就是一个前置部署的工业基地，把美国法律体系的确定性和菲律宾的制造业优势结合起来。他最值得注意的观点是：AI 供应链远不只是芯片，还包括 precision reducers、servo motors、rare earth magnets、actuators、物流、电工、数据中心输入，以及 robotics 零部件。
+
+Helberg 将这套方案和中国的 Belt and Road 模式做了对比。他批评由国企和中央规划资本推动的大型项目容易带来浪费、虚高报价、债务陷阱和政治杠杆。美国替代方案在他看来是一种 product-centric foreign policy：和 builder 及私营公司协作，把平台做成商业上可持续的产品，并最终让它作为 private service 脱离政府长期运行。他有一句话很能概括这种思路：“We're not gonna do government operated supply chains because that's not how we shine as a country.”
+
+对 AI builders 来说，真正的信号是：供应链安全正在变成一个产品问题，而不只是政策文件。如果 robotics、data centers、energy、minerals、logistics 和 manufacturing 都会成为 AI scaling 的约束，那么下一波 AI infrastructure 公司可能会比纯软件人想象中更工业化。
+https://www.youtube.com/watch?v=xjlYpGaxIPA
+
+Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders

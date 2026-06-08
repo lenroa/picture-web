@@ -1,0 +1,3908 @@
+{
+  "font_size": 0.4,
+  "font_color": "#FFFFFF",
+  "background_alpha": 0.5,
+  "background_color": "#9C27B0",
+  "Stroke": "none",
+  "type": "AIsubtitle",
+  "lang": "zh",
+  "version": "v1.7.0.4",
+  "body": [
+    {
+      "from": 0.38,
+      "to": 2.82,
+      "sid": 1,
+      "location": 2,
+      "content": "睡前听完一本书",
+      "music": 0.0
+    },
+    {
+      "from": 3.4,
+      "to": 7.72,
+      "sid": 2,
+      "location": 2,
+      "content": "今天我们读一部心理学神作蛤蟆先生",
+      "music": 0.0
+    },
+    {
+      "from": 7.72,
+      "to": 9.1,
+      "sid": 3,
+      "location": 2,
+      "content": "去看心理医生",
+      "music": 0.0
+    },
+    {
+      "from": 9.1,
+      "to": 11.03,
+      "sid": 4,
+      "location": 2,
+      "content": "经常有朋友问我",
+      "music": 0.0
+    },
+    {
+      "from": 11.03,
+      "to": 14.49,
+      "sid": 5,
+      "location": 2,
+      "content": "为什么我明明日子过得也还可以",
+      "music": 0.0
+    },
+    {
+      "from": 14.49,
+      "to": 15.75,
+      "sid": 6,
+      "location": 2,
+      "content": "没病没灾的",
+      "music": 0.0
+    },
+    {
+      "from": 16.75,
+      "to": 19.049,
+      "sid": 7,
+      "location": 2,
+      "content": "但就是每天觉得特别累",
+      "music": 0.0
+    },
+    {
+      "from": 19.049,
+      "to": 20.909,
+      "sid": 8,
+      "location": 2,
+      "content": "遇到一点点小挫折",
+      "music": 0.0
+    },
+    {
+      "from": 20.909,
+      "to": 22.869,
+      "sid": 9,
+      "location": 2,
+      "content": "就想全盘否定自己",
+      "music": 0.0
+    },
+    {
+      "from": 22.869,
+      "to": 26.61,
+      "sid": 10,
+      "location": 2,
+      "content": "甚至有时候坐在车里突然就想放声大哭",
+      "music": 0.0
+    },
+    {
+      "from": 26.61,
+      "to": 28.85,
+      "sid": 11,
+      "location": 2,
+      "content": "很多人觉得这叫矫情",
+      "music": 0.0
+    },
+    {
+      "from": 28.85,
+      "to": 30.439,
+      "sid": 12,
+      "location": 2,
+      "content": "其实不是",
+      "music": 0.0
+    },
+    {
+      "from": 30.439,
+      "to": 32.379,
+      "sid": 13,
+      "location": 2,
+      "content": "这叫情绪破产",
+      "music": 0.0
+    },
+    {
+      "from": 32.379,
+      "to": 35.25,
+      "sid": 14,
+      "location": 2,
+      "content": "我们就像书里的蛤蟆先生一样",
+      "music": 0.0
+    },
+    {
+      "from": 35.25,
+      "to": 36.87,
+      "sid": 15,
+      "location": 2,
+      "content": "他是个富二代",
+      "music": 0.0
+    },
+    {
+      "from": 36.87,
+      "to": 38.27,
+      "sid": 16,
+      "location": 2,
+      "content": "住着大庄园",
+      "music": 0.0
+    },
+    {
+      "from": 38.27,
+      "to": 42.11,
+      "sid": 17,
+      "location": 2,
+      "content": "有一群好朋友看起来光鲜亮丽",
+      "music": 0.0
+    },
+    {
+      "from": 42.39,
+      "to": 43.99,
+      "sid": 18,
+      "location": 2,
+      "content": "但却突然抑郁的",
+      "music": 0.0
+    },
+    {
+      "from": 43.99,
+      "to": 46.25,
+      "sid": 19,
+      "location": 2,
+      "content": "连起床的力气都没有了",
+      "music": 0.0
+    },
+    {
+      "from": 46.25,
+      "to": 47.15,
+      "sid": 20,
+      "location": 2,
+      "content": "为什么",
+      "music": 0.0
+    },
+    {
+      "from": 48.35,
+      "to": 50.53,
+      "sid": 21,
+      "location": 2,
+      "content": "因为我们绝大多数成年人",
+      "music": 0.0
+    },
+    {
+      "from": 50.53,
+      "to": 53.75,
+      "sid": 22,
+      "location": 2,
+      "content": "在社会上活的就像一个讨好的儿童",
+      "music": 0.0
+    },
+    {
+      "from": 53.75,
+      "to": 56.61,
+      "sid": 23,
+      "location": 2,
+      "content": "在内心里又像一个严厉的父母",
+      "music": 0.0
+    },
+    {
+      "from": 56.61,
+      "to": 58.61,
+      "sid": 24,
+      "location": 2,
+      "content": "疯狂的PUA自己",
+      "music": 0.0
+    },
+    {
+      "from": 58.61,
+      "to": 62.67,
+      "sid": 25,
+      "location": 2,
+      "content": "我们唯独弄丢了那个理智强大的自己",
+      "music": 0.0
+    },
+    {
+      "from": 62.67,
+      "to": 67.759,
+      "sid": 26,
+      "location": 2,
+      "content": "今天我们就跟着蛤蟆先生走进心理咨询室",
+      "music": 0.0
+    },
+    {
+      "from": 67.759,
+      "to": 71.699,
+      "sid": 27,
+      "location": 2,
+      "content": "看看我们是如何一步步把自己逼疯的",
+      "music": 0.0
+    },
+    {
+      "from": 71.699,
+      "to": 76.42,
+      "sid": 28,
+      "location": 2,
+      "content": "又该如何把人生的方向盘重新抢回自己手里",
+      "music": 0.0
+    },
+    {
+      "from": 76.42,
+      "to": 81.559,
+      "sid": 29,
+      "location": 2,
+      "content": "故事的主角蛤蟆先生以前是个极其爱出风头",
+      "music": 0.0
+    },
+    {
+      "from": 81.559,
+      "to": 83.91,
+      "sid": 30,
+      "location": 2,
+      "content": "生命力极其旺盛的人",
+      "music": 0.0
+    },
+    {
+      "from": 83.91,
+      "to": 86.05,
+      "sid": 31,
+      "location": 2,
+      "content": "在童话世界的滤镜里",
+      "music": 0.0
+    },
+    {
+      "from": 86.05,
+      "to": 88.11,
+      "sid": 32,
+      "location": 2,
+      "content": "她总是穿着最拉风",
+      "music": 0.0
+    },
+    {
+      "from": 88.11,
+      "to": 90.31,
+      "sid": 33,
+      "location": 2,
+      "content": "最夺人眼球的格纹西装",
+      "music": 0.0
+    },
+    {
+      "from": 90.31,
+      "to": 92.289,
+      "sid": 34,
+      "location": 2,
+      "content": "打着鲜艳的领结",
+      "music": 0.0
+    },
+    {
+      "from": 92.289,
+      "to": 96.389,
+      "sid": 35,
+      "location": 2,
+      "content": "开着那辆马达轰鸣的敞篷跑车招摇过市",
+      "music": 0.0
+    },
+    {
+      "from": 96.389,
+      "to": 98.269,
+      "sid": 36,
+      "location": 2,
+      "content": "只要有他在的地方",
+      "music": 0.0
+    },
+    {
+      "from": 98.269,
+      "to": 100.88,
+      "sid": 37,
+      "location": 2,
+      "content": "永远不缺笑声和热闹",
+      "music": 0.0
+    },
+    {
+      "from": 100.88,
+      "to": 103.94,
+      "sid": 38,
+      "location": 2,
+      "content": "他走到哪里都是人群绝对的焦点",
+      "music": 0.0
+    },
+    {
+      "from": 103.94,
+      "to": 107.4,
+      "sid": 39,
+      "location": 2,
+      "content": "是朋友们眼里的开心果和能量源",
+      "music": 0.0
+    },
+    {
+      "from": 107.4,
+      "to": 108.98,
+      "sid": 40,
+      "location": 2,
+      "content": "但突然有一天",
+      "music": 0.0
+    },
+    {
+      "from": 108.98,
+      "to": 113.8,
+      "sid": 41,
+      "location": 2,
+      "content": "这种看似永远不会枯竭的快乐戛然而止了",
+      "music": 0.0
+    },
+    {
+      "from": 113.8,
+      "to": 117.38,
+      "sid": 42,
+      "location": 2,
+      "content": "他的朋友们老成持重的欢",
+      "music": 0.0
+    },
+    {
+      "from": 117.38,
+      "to": 119.28,
+      "sid": 43,
+      "location": 2,
+      "content": "善良的鼹鼠",
+      "music": 0.0
+    },
+    {
+      "from": 119.28,
+      "to": 124.19,
+      "sid": 44,
+      "location": 2,
+      "content": "理智的水鼠发现蛤蟆已经很久没有出门了",
+      "music": 0.0
+    },
+    {
+      "from": 124.19,
+      "to": 127.61,
+      "sid": 45,
+      "location": 2,
+      "content": "那辆曾经拉风的跑车落满了灰尘",
+      "music": 0.0
+    },
+    {
+      "from": 127.61,
+      "to": 132.35,
+      "sid": 46,
+      "location": 2,
+      "content": "当他们担忧的推开蛤蟆庄园那扇沉重的大门时",
+      "music": 0.0
+    },
+    {
+      "from": 132.35,
+      "to": 136.03,
+      "sid": 47,
+      "location": 2,
+      "content": "眼前的景象让他们不寒而栗",
+      "music": 0.0
+    },
+    {
+      "from": 136.03,
+      "to": 138.34,
+      "sid": 48,
+      "location": 2,
+      "content": "那个曾经意气风发",
+      "music": 0.0
+    },
+    {
+      "from": 138.34,
+      "to": 141.82,
+      "sid": 49,
+      "location": 2,
+      "content": "甚至有些嚣张的蛤蟆不见了",
+      "music": 0.0
+    },
+    {
+      "from": 141.82,
+      "to": 147.23,
+      "sid": 50,
+      "location": 2,
+      "content": "现在的她穿着一件皱巴巴散发着馊味的睡衣",
+      "music": 0.0
+    },
+    {
+      "from": 147.23,
+      "to": 150.42,
+      "sid": 51,
+      "location": 2,
+      "content": "像一滩被抽干了骨血的烂泥一样",
+      "music": 0.0
+    },
+    {
+      "from": 150.42,
+      "to": 154.16,
+      "sid": 52,
+      "location": 2,
+      "content": "死气沉沉的瘫在凌乱不堪的沙发上",
+      "music": 0.0
+    },
+    {
+      "from": 154.16,
+      "to": 156.2,
+      "sid": 53,
+      "location": 2,
+      "content": "屋子里又脏又乱",
+      "music": 0.0
+    },
+    {
+      "from": 156.2,
+      "to": 157.56,
+      "sid": 54,
+      "location": 2,
+      "content": "窗帘紧闭",
+      "music": 0.0
+    },
+    {
+      "from": 157.56,
+      "to": 159.62,
+      "sid": 55,
+      "location": 2,
+      "content": "透不进一丝阳光",
+      "music": 0.0
+    },
+    {
+      "from": 159.62,
+      "to": 163.1,
+      "sid": 56,
+      "location": 2,
+      "content": "最让人窒息的是蛤蟆的眼神",
+      "music": 0.0
+    },
+    {
+      "from": 163.1,
+      "to": 165.12,
+      "sid": 57,
+      "location": 2,
+      "content": "那双曾经滴溜溜转",
+      "music": 0.0
+    },
+    {
+      "from": 165.12,
+      "to": 170.03,
+      "sid": 58,
+      "location": 2,
+      "content": "充满狡猾和活力的眼睛此刻变得黯淡无光",
+      "music": 0.0
+    },
+    {
+      "from": 170.03,
+      "to": 171.49,
+      "sid": 59,
+      "location": 2,
+      "content": "空洞无比",
+      "music": 0.0
+    },
+    {
+      "from": 171.49,
+      "to": 174.64,
+      "sid": 60,
+      "location": 2,
+      "content": "面对朋友们急切的关心和询问",
+      "music": 0.0
+    },
+    {
+      "from": 174.64,
+      "to": 177.88,
+      "sid": 61,
+      "location": 2,
+      "content": "蛤蟆连张嘴说话的力气都快没有了",
+      "music": 0.0
+    },
+    {
+      "from": 177.88,
+      "to": 181.17,
+      "sid": 62,
+      "location": 2,
+      "content": "它只能极其艰难的牵动嘴角",
+      "music": 0.0
+    },
+    {
+      "from": 181.17,
+      "to": 183.73,
+      "sid": 63,
+      "location": 2,
+      "content": "勉强扯出一个极其难看",
+      "music": 0.0
+    },
+    {
+      "from": 183.73,
+      "to": 186.09,
+      "sid": 64,
+      "location": 2,
+      "content": "充满讨好意味的微笑",
+      "music": 0.0
+    },
+    {
+      "from": 186.09,
+      "to": 190.32,
+      "sid": 65,
+      "location": 2,
+      "content": "然后眼泪就像决堤一样流了下来",
+      "music": 0.0
+    },
+    {
+      "from": 190.32,
+      "to": 193.22,
+      "sid": 66,
+      "location": 2,
+      "content": "他忍不住捂着脸放声大哭",
+      "music": 0.0
+    },
+    {
+      "from": 193.22,
+      "to": 194.839,
+      "sid": 67,
+      "location": 2,
+      "content": "那一刻",
+      "music": 0.0
+    },
+    {
+      "from": 194.839,
+      "to": 198.67,
+      "sid": 68,
+      "location": 2,
+      "content": "他体会到了一种深深的无力感",
+      "music": 0.0
+    },
+    {
+      "from": 198.67,
+      "to": 201.97,
+      "sid": 69,
+      "location": 2,
+      "content": "那是灵魂被彻底掏空的虚无",
+      "music": 0.0
+    },
+    {
+      "from": 201.97,
+      "to": 204.75,
+      "sid": 70,
+      "location": 2,
+      "content": "这幅画面刺痛你了吗",
+      "music": 0.0
+    },
+    {
+      "from": 204.75,
+      "to": 207.26,
+      "sid": 71,
+      "location": 2,
+      "content": "这像不像很多现代人",
+      "music": 0.0
+    },
+    {
+      "from": 207.26,
+      "to": 210.3,
+      "sid": 72,
+      "location": 2,
+      "content": "甚至就是屏幕前你我的真实写照",
+      "music": 0.0
+    },
+    {
+      "from": 210.3,
+      "to": 211.84,
+      "sid": 73,
+      "location": 2,
+      "content": "白天在公司里",
+      "music": 0.0
+    },
+    {
+      "from": 211.84,
+      "to": 213.3,
+      "sid": 74,
+      "location": 2,
+      "content": "我们西装革履",
+      "music": 0.0
+    },
+    {
+      "from": 213.3,
+      "to": 214.73,
+      "sid": 75,
+      "location": 2,
+      "content": "妆容精致",
+      "music": 0.0
+    },
+    {
+      "from": 214.73,
+      "to": 216.95,
+      "sid": 76,
+      "location": 2,
+      "content": "我们是那个面对甲方的刁难",
+      "music": 0.0
+    },
+    {
+      "from": 216.95,
+      "to": 218.77,
+      "sid": 77,
+      "location": 2,
+      "content": "永远回复好的",
+      "music": 0.0
+    },
+    {
+      "from": 218.77,
+      "to": 220.57,
+      "sid": 78,
+      "location": 2,
+      "content": "收到的靠谱打工人",
+      "music": 0.0
+    },
+    {
+      "from": 220.57,
+      "to": 221.29,
+      "sid": 79,
+      "location": 2,
+      "content": "是父母",
+      "music": 0.0
+    },
+    {
+      "from": 221.29,
+      "to": 223.11,
+      "sid": 80,
+      "location": 2,
+      "content": "亲戚眼里懂事听话",
+      "music": 0.0
+    },
+    {
+      "from": 223.11,
+      "to": 224.75,
+      "sid": 81,
+      "location": 2,
+      "content": "事业有成的孩子",
+      "music": 0.0
+    },
+    {
+      "from": 224.75,
+      "to": 227.42,
+      "sid": 82,
+      "location": 2,
+      "content": "是伴侣面前情绪稳定",
+      "music": 0.0
+    },
+    {
+      "from": 227.42,
+      "to": 230.4,
+      "sid": 83,
+      "location": 2,
+      "content": "仿佛永远不会倒下的家庭顶梁柱",
+      "music": 0.0
+    },
+    {
+      "from": 230.4,
+      "to": 232.28,
+      "sid": 84,
+      "location": 2,
+      "content": "我们在所有人面前",
+      "music": 0.0
+    },
+    {
+      "from": 232.28,
+      "to": 236.49,
+      "sid": 85,
+      "location": 2,
+      "content": "扮演着一个完美的成年人角色",
+      "music": 0.0
+    },
+    {
+      "from": 236.49,
+      "to": 239.69,
+      "sid": 86,
+      "location": 2,
+      "content": "可是当夜深人静",
+      "music": 0.0
+    },
+    {
+      "from": 239.69,
+      "to": 243.42,
+      "sid": 87,
+      "location": 2,
+      "content": "当你终于把车停在地下车库",
+      "music": 0.0
+    },
+    {
+      "from": 243.82,
+      "to": 245.19,
+      "sid": 88,
+      "location": 2,
+      "content": "熄了火",
+      "music": 0.0
+    },
+    {
+      "from": 245.19,
+      "to": 248.27,
+      "sid": 89,
+      "location": 2,
+      "content": "在车厢那片狭小黑暗的空间里",
+      "music": 0.0
+    },
+    {
+      "from": 248.27,
+      "to": 250.27,
+      "sid": 90,
+      "location": 2,
+      "content": "独自坐着的十几分钟里",
+      "music": 0.0
+    },
+    {
+      "from": 250.27,
+      "to": 251.95,
+      "sid": 91,
+      "location": 2,
+      "content": "当你推开家门",
+      "music": 0.0
+    },
+    {
+      "from": 251.95,
+      "to": 254.675,
+      "sid": 92,
+      "location": 2,
+      "content": "卸下所有的伪装和面具",
+      "music": 0.0
+    },
+    {
+      "from": 255.02,
+      "to": 256.22,
+      "sid": 93,
+      "location": 2,
+      "content": "独自面对浴室",
+      "music": 0.0
+    },
+    {
+      "from": 256.22,
+      "to": 257.64,
+      "sid": 94,
+      "location": 2,
+      "content": "镜子里的自己时",
+      "music": 0.0
+    },
+    {
+      "from": 257.64,
+      "to": 259.5,
+      "sid": 95,
+      "location": 2,
+      "content": "你悲哀的发现",
+      "music": 0.0
+    },
+    {
+      "from": 259.5,
+      "to": 262.82,
+      "sid": 96,
+      "location": 2,
+      "content": "自己的精神电量早就耗成了0%",
+      "music": 0.0
+    },
+    {
+      "from": 262.82,
+      "to": 265.46,
+      "sid": 97,
+      "location": 2,
+      "content": "你的外表看起来毫无破绽",
+      "music": 0.0
+    },
+    {
+      "from": 265.46,
+      "to": 270.28,
+      "sid": 98,
+      "location": 2,
+      "content": "但内心其实早就是一片死气沉沉的废墟",
+      "music": 0.0
+    },
+    {
+      "from": 270.6,
+      "to": 272.48,
+      "sid": 99,
+      "location": 2,
+      "content": "任何一件微不足道的小事",
+      "music": 0.0
+    },
+    {
+      "from": 273.48,
+      "to": 275.44,
+      "sid": 100,
+      "location": 2,
+      "content": "外卖撒了猫",
+      "music": 0.0
+    },
+    {
+      "from": 275.44,
+      "to": 276.84,
+      "sid": 101,
+      "location": 2,
+      "content": "打碎了杯子",
+      "music": 0.0
+    },
+    {
+      "from": 276.84,
+      "to": 278.96,
+      "sid": 102,
+      "location": 2,
+      "content": "领导一句不经意的反问",
+      "music": 0.0
+    },
+    {
+      "from": 278.96,
+      "to": 282.059,
+      "sid": 103,
+      "location": 2,
+      "content": "都可能成为压垮你的最后一根稻草",
+      "music": 0.0
+    },
+    {
+      "from": 282.059,
+      "to": 285.399,
+      "sid": 104,
+      "location": 2,
+      "content": "让你在瞬间溃不成军",
+      "music": 0.0
+    },
+    {
+      "from": 285.399,
+      "to": 290.43,
+      "sid": 105,
+      "location": 2,
+      "content": "这就是现代社会最隐蔽也最可怕的微笑抑郁",
+      "music": 0.0
+    },
+    {
+      "from": 290.43,
+      "to": 293.18,
+      "sid": 106,
+      "location": 2,
+      "content": "你其实根本没有生什么具体的病",
+      "music": 0.0
+    },
+    {
+      "from": 293.18,
+      "to": 295.2,
+      "sid": 107,
+      "location": 2,
+      "content": "你只是太累了",
+      "music": 0.0
+    },
+    {
+      "from": 295.2,
+      "to": 297.1,
+      "sid": 108,
+      "location": 2,
+      "content": "你长期的忍让",
+      "music": 0.0
+    },
+    {
+      "from": 297.1,
+      "to": 298.96,
+      "sid": 109,
+      "location": 2,
+      "content": "妥协和压抑",
+      "music": 0.0
+    },
+    {
+      "from": 298.96,
+      "to": 301.52,
+      "sid": 110,
+      "location": 2,
+      "content": "已经像无形的蛀虫一样",
+      "music": 0.0
+    },
+    {
+      "from": 301.52,
+      "to": 304.52,
+      "sid": 111,
+      "location": 2,
+      "content": "悄无声息地掏空了你的精神账户",
+      "music": 0.0
+    },
+    {
+      "from": 304.52,
+      "to": 307.18,
+      "sid": 112,
+      "location": 2,
+      "content": "直到宣告彻底的情绪破产",
+      "music": 0.0
+    },
+    {
+      "from": 307.18,
+      "to": 310.26,
+      "sid": 113,
+      "location": 2,
+      "content": "为了拯救处在崩溃边缘的蛤蟆",
+      "music": 0.0
+    },
+    {
+      "from": 310.26,
+      "to": 312.43,
+      "sid": 114,
+      "location": 2,
+      "content": "朋友们连哄带骗",
+      "music": 0.0
+    },
+    {
+      "from": 312.43,
+      "to": 316.11,
+      "sid": 115,
+      "location": 2,
+      "content": "把他送到了苍鹭医生那里进行心理咨询",
+      "music": 0.0
+    },
+    {
+      "from": 316.11,
+      "to": 320.69,
+      "sid": 116,
+      "location": 2,
+      "content": "而苍鹭医生拿着一把冰冷锋利的手术刀",
+      "music": 0.0
+    },
+    {
+      "from": 320.69,
+      "to": 322.92,
+      "sid": 117,
+      "location": 2,
+      "content": "无情的切开了蛤蟆",
+      "music": 0.0
+    },
+    {
+      "from": 322.92,
+      "to": 326.14,
+      "sid": 118,
+      "location": 2,
+      "content": "也切开了我们所有人的心理防御机制",
+      "music": 0.0
+    },
+    {
+      "from": 326.14,
+      "to": 327.72,
+      "sid": 119,
+      "location": 2,
+      "content": "在咨询室里",
+      "music": 0.0
+    },
+    {
+      "from": 327.72,
+      "to": 330.73,
+      "sid": 120,
+      "location": 2,
+      "content": "苍鹭医生抛出了一个核心问题",
+      "music": 0.0
+    },
+    {
+      "from": 330.73,
+      "to": 334.38,
+      "sid": 121,
+      "location": 2,
+      "content": "蛤蟆你现在的状态很糟糕",
+      "music": 0.0
+    },
+    {
+      "from": 334.38,
+      "to": 335.82,
+      "sid": 122,
+      "location": 2,
+      "content": "但我想知道",
+      "music": 0.0
+    },
+    {
+      "from": 335.82,
+      "to": 338.18,
+      "sid": 123,
+      "location": 2,
+      "content": "当你在生活中遇到冲突",
+      "music": 0.0
+    },
+    {
+      "from": 338.18,
+      "to": 340.8,
+      "sid": 124,
+      "location": 2,
+      "content": "遇到别人让你不舒服的时候",
+      "music": 0.0
+    },
+    {
+      "from": 340.8,
+      "to": 343.02,
+      "sid": 125,
+      "location": 2,
+      "content": "你通常是怎么处理的",
+      "music": 0.0
+    },
+    {
+      "from": 343.02,
+      "to": 344.94,
+      "sid": 126,
+      "location": 2,
+      "content": "蛤蟆瑟缩了一下",
+      "music": 0.0
+    },
+    {
+      "from": 344.94,
+      "to": 349.88,
+      "sid": 127,
+      "location": 2,
+      "content": "委屈的说我我总是顺从",
+      "music": 0.0
+    },
+    {
+      "from": 349.88,
+      "to": 351.3,
+      "sid": 128,
+      "location": 2,
+      "content": "比如欢",
+      "music": 0.0
+    },
+    {
+      "from": 351.3,
+      "to": 353.18,
+      "sid": 129,
+      "location": 2,
+      "content": "他跑到我的庄园里",
+      "music": 0.0
+    },
+    {
+      "from": 353.18,
+      "to": 355.28,
+      "sid": 130,
+      "location": 2,
+      "content": "对着我指手画脚",
+      "music": 0.0
+    },
+    {
+      "from": 355.56,
+      "to": 357.32,
+      "sid": 131,
+      "location": 2,
+      "content": "甚至抢走了我",
+      "music": 0.0
+    },
+    {
+      "from": 357.32,
+      "to": 360.09,
+      "sid": 132,
+      "location": 2,
+      "content": "作为村里各种委员会会长的头衔",
+      "music": 0.0
+    },
+    {
+      "from": 360.09,
+      "to": 362.09,
+      "sid": 133,
+      "location": 2,
+      "content": "我心里其实很难过",
+      "music": 0.0
+    },
+    {
+      "from": 362.09,
+      "to": 363.37,
+      "sid": 134,
+      "location": 2,
+      "content": "很愤怒",
+      "music": 0.0
+    },
+    {
+      "from": 363.37,
+      "to": 364.99,
+      "sid": 135,
+      "location": 2,
+      "content": "但我不敢发火",
+      "music": 0.0
+    },
+    {
+      "from": 364.99,
+      "to": 367.11,
+      "sid": 136,
+      "location": 2,
+      "content": "我只会生闷气",
+      "music": 0.0
+    },
+    {
+      "from": 367.11,
+      "to": 369.31,
+      "sid": 137,
+      "location": 2,
+      "content": "我怕他们不喜欢我了",
+      "music": 0.0
+    },
+    {
+      "from": 369.31,
+      "to": 373.43,
+      "sid": 138,
+      "location": 2,
+      "content": "我甚至会反思是不是我真的做错了什么",
+      "music": 0.0
+    },
+    {
+      "from": 373.43,
+      "to": 376.14,
+      "sid": 139,
+      "location": 2,
+      "content": "然后去向他们主动道歉",
+      "music": 0.0
+    },
+    {
+      "from": 376.14,
+      "to": 378.69,
+      "sid": 140,
+      "location": 2,
+      "content": "这段看似童话般的对话",
+      "music": 0.0
+    },
+    {
+      "from": 378.69,
+      "to": 382.99,
+      "sid": 141,
+      "location": 2,
+      "content": "却如同一记重锤狠狠砸在了我们心上",
+      "music": 0.0
+    },
+    {
+      "from": 382.99,
+      "to": 386.89,
+      "sid": 142,
+      "location": 2,
+      "content": "苍鹭医生将这种状态精准的定义为",
+      "music": 0.0
+    },
+    {
+      "from": 386.89,
+      "to": 389.01,
+      "sid": 143,
+      "location": 2,
+      "content": "适应型儿童状态",
+      "music": 0.0
+    },
+    {
+      "from": 389.01,
+      "to": 393.509,
+      "sid": 144,
+      "location": 2,
+      "content": "让我们把这个心理学概念翻译成成年人世界里",
+      "music": 0.0
+    },
+    {
+      "from": 393.509,
+      "to": 395.229,
+      "sid": 145,
+      "location": 2,
+      "content": "鲜血淋漓的痛点",
+      "music": 0.0
+    },
+    {
+      "from": 395.229,
+      "to": 398.57,
+      "sid": 146,
+      "location": 2,
+      "content": "在职场和复杂的人际交往中",
+      "music": 0.0
+    },
+    {
+      "from": 398.57,
+      "to": 403.15,
+      "sid": 147,
+      "location": 2,
+      "content": "有多少人每天就活在这种适应型儿童状态里",
+      "music": 0.0
+    },
+    {
+      "from": 403.15,
+      "to": 405.73,
+      "sid": 148,
+      "location": 2,
+      "content": "只要别人稍微变一下脸色",
+      "music": 0.0
+    },
+    {
+      "from": 405.73,
+      "to": 408.909,
+      "sid": 149,
+      "location": 2,
+      "content": "哪怕只是老板皱了一下眉头",
+      "music": 0.0
+    },
+    {
+      "from": 408.909,
+      "to": 411.089,
+      "sid": 150,
+      "location": 2,
+      "content": "同事回微信慢了一点",
+      "music": 0.0
+    },
+    {
+      "from": 411.089,
+      "to": 413.429,
+      "sid": 151,
+      "location": 2,
+      "content": "伴侣说话的声音大了一点",
+      "music": 0.0
+    },
+    {
+      "from": 413.429,
+      "to": 416.69,
+      "sid": 152,
+      "location": 2,
+      "content": "你心里的警报器就立刻拉响",
+      "music": 0.0
+    },
+    {
+      "from": 416.69,
+      "to": 418.29,
+      "sid": 153,
+      "location": 2,
+      "content": "是不是我哪里做错了",
+      "music": 0.0
+    },
+    {
+      "from": 419.33,
+      "to": 421.21,
+      "sid": 154,
+      "location": 2,
+      "content": "是不是我说错话",
+      "music": 0.0
+    },
+    {
+      "from": 421.21,
+      "to": 422.81,
+      "sid": 155,
+      "location": 2,
+      "content": "惹她不高兴了",
+      "music": 0.0
+    },
+    {
+      "from": 422.81,
+      "to": 424.32,
+      "sid": 156,
+      "location": 2,
+      "content": "为了合群",
+      "music": 0.0
+    },
+    {
+      "from": 424.32,
+      "to": 427.16,
+      "sid": 157,
+      "location": 2,
+      "content": "为了维持那点可怜的人际关系和谐",
+      "music": 0.0
+    },
+    {
+      "from": 428.2,
+      "to": 429.84,
+      "sid": 158,
+      "location": 2,
+      "content": "你不断的退让",
+      "music": 0.0
+    },
+    {
+      "from": 429.84,
+      "to": 432.559,
+      "sid": 159,
+      "location": 2,
+      "content": "明明是别人侵犯了你的边界",
+      "music": 0.0
+    },
+    {
+      "from": 432.559,
+      "to": 436.299,
+      "sid": 160,
+      "location": 2,
+      "content": "你却连一句我不愿意都说不出口",
+      "music": 0.0
+    },
+    {
+      "from": 436.299,
+      "to": 438.82,
+      "sid": 161,
+      "location": 2,
+      "content": "你压抑自己的真实需求",
+      "music": 0.0
+    },
+    {
+      "from": 438.82,
+      "to": 440.9,
+      "sid": 162,
+      "location": 2,
+      "content": "把所有的委屈嚼碎了",
+      "music": 0.0
+    },
+    {
+      "from": 440.9,
+      "to": 442.16,
+      "sid": 163,
+      "location": 2,
+      "content": "往肚子里咽",
+      "music": 0.0
+    },
+    {
+      "from": 442.16,
+      "to": 445.16,
+      "sid": 164,
+      "location": 2,
+      "content": "活生生把自己打造成了一个没有骨头",
+      "music": 0.0
+    },
+    {
+      "from": 445.16,
+      "to": 447.82,
+      "sid": 165,
+      "location": 2,
+      "content": "没有脾气的讨好型人格",
+      "music": 0.0
+    },
+    {
+      "from": 447.82,
+      "to": 449.96,
+      "sid": 166,
+      "location": 2,
+      "content": "你以为只要足够乖顺",
+      "music": 0.0
+    },
+    {
+      "from": 449.96,
+      "to": 451.559,
+      "sid": 167,
+      "location": 2,
+      "content": "足够忍让",
+      "music": 0.0
+    },
+    {
+      "from": 451.559,
+      "to": 454.019,
+      "sid": 168,
+      "location": 2,
+      "content": "就能换来别人的爱和尊重",
+      "music": 0.0
+    },
+    {
+      "from": 454.019,
+      "to": 457.259,
+      "sid": 169,
+      "location": 2,
+      "content": "但现实往往是你的退让",
+      "music": 0.0
+    },
+    {
+      "from": 457.259,
+      "to": 460.989,
+      "sid": 170,
+      "location": 2,
+      "content": "只会换来别人更肆无忌惮的得寸进尺",
+      "music": 0.0
+    },
+    {
+      "from": 461.5,
+      "to": 463.44,
+      "sid": 171,
+      "location": 2,
+      "content": "你在外界的挤压下",
+      "music": 0.0
+    },
+    {
+      "from": 463.44,
+      "to": 468.12,
+      "sid": 172,
+      "location": 2,
+      "content": "活成了一个受尽委屈却不敢哭出声的儿童",
+      "music": 0.0
+    },
+    {
+      "from": 468.12,
+      "to": 470.12,
+      "sid": 173,
+      "location": 2,
+      "content": "但这还不是最致命的",
+      "music": 0.0
+    },
+    {
+      "from": 470.12,
+      "to": 473.71,
+      "sid": 174,
+      "location": 2,
+      "content": "比适应型儿童状态更可怕的是",
+      "music": 0.0
+    },
+    {
+      "from": 473.71,
+      "to": 476.23,
+      "sid": 175,
+      "location": 2,
+      "content": "另一种摧毁我们的力量",
+      "music": 0.0
+    },
+    {
+      "from": 476.23,
+      "to": 479.51,
+      "sid": 176,
+      "location": 2,
+      "content": "蛤蟆在咨询中痛苦地抱住头",
+      "music": 0.0
+    },
+    {
+      "from": 479.51,
+      "to": 481.39,
+      "sid": 177,
+      "location": 2,
+      "content": "他说医生",
+      "music": 0.0
+    },
+    {
+      "from": 481.39,
+      "to": 483.81,
+      "sid": 178,
+      "location": 2,
+      "content": "其实朋友们有时候并没有骂我",
+      "music": 0.0
+    },
+    {
+      "from": 483.81,
+      "to": 485.75,
+      "sid": 179,
+      "location": 2,
+      "content": "但在我自己脑子里",
+      "music": 0.0
+    },
+    {
+      "from": 485.75,
+      "to": 489.82,
+      "sid": 180,
+      "location": 2,
+      "content": "总有一个巨大的声音在日夜不停的骂我",
+      "music": 0.0
+    },
+    {
+      "from": 489.82,
+      "to": 491.62,
+      "sid": 181,
+      "location": 2,
+      "content": "那个声音对我说",
+      "music": 0.0
+    },
+    {
+      "from": 491.62,
+      "to": 493.72,
+      "sid": 182,
+      "location": 2,
+      "content": "蛤蟆你真没用",
+      "music": 0.0
+    },
+    {
+      "from": 493.72,
+      "to": 495.44,
+      "sid": 183,
+      "location": 2,
+      "content": "你就是个废物",
+      "music": 0.0
+    },
+    {
+      "from": 495.44,
+      "to": 497.52,
+      "sid": 184,
+      "location": 2,
+      "content": "你把生活搞得一团糟",
+      "music": 0.0
+    },
+    {
+      "from": 497.52,
+      "to": 499.31,
+      "sid": 185,
+      "location": 2,
+      "content": "你什么都做不好",
+      "music": 0.0
+    },
+    {
+      "from": 499.31,
+      "to": 500.97,
+      "sid": 186,
+      "location": 2,
+      "content": "你不配活着",
+      "music": 0.0
+    },
+    {
+      "from": 500.97,
+      "to": 503.23,
+      "sid": 187,
+      "location": 2,
+      "content": "苍鹭医生静静的看着他",
+      "music": 0.0
+    },
+    {
+      "from": 503.23,
+      "to": 505.29,
+      "sid": 188,
+      "location": 2,
+      "content": "缓缓吐出四个字",
+      "music": 0.0
+    },
+    {
+      "from": 505.29,
+      "to": 507.74,
+      "sid": 189,
+      "location": 2,
+      "content": "挑剔型父母状态",
+      "music": 0.0
+    },
+    {
+      "from": 507.74,
+      "to": 512.34,
+      "sid": 190,
+      "location": 2,
+      "content": "这个概念是整本书中最让人脊背发凉的真相",
+      "music": 0.0
+    },
+    {
+      "from": 512.34,
+      "to": 513.539,
+      "sid": 191,
+      "location": 2,
+      "content": "是的",
+      "music": 0.0
+    },
+    {
+      "from": 513.539,
+      "to": 515.279,
+      "sid": 192,
+      "location": 2,
+      "content": "比外界的打压",
+      "music": 0.0
+    },
+    {
+      "from": 515.279,
+      "to": 516.499,
+      "sid": 193,
+      "location": 2,
+      "content": "比讨好别人",
+      "music": 0.0
+    },
+    {
+      "from": 516.499,
+      "to": 521.419,
+      "sid": 194,
+      "location": 2,
+      "content": "更可怕的是我们自己对自己的疯狂折磨",
+      "music": 0.0
+    },
+    {
+      "from": 522.41,
+      "to": 527.04,
+      "sid": 195,
+      "location": 2,
+      "content": "很多时候这个世界并没有对你举起屠刀",
+      "music": 0.0
+    },
+    {
+      "from": 527.44,
+      "to": 531.74,
+      "sid": 196,
+      "location": 2,
+      "content": "但你在心里早就已经把自己领取了100遍",
+      "music": 0.0
+    },
+    {
+      "from": 531.74,
+      "to": 534.04,
+      "sid": 197,
+      "location": 2,
+      "content": "当我们把一件工作搞砸了",
+      "music": 0.0
+    },
+    {
+      "from": 534.04,
+      "to": 536.2,
+      "sid": 198,
+      "location": 2,
+      "content": "或者搞砸了一段关系",
+      "music": 0.0
+    },
+    {
+      "from": 536.2,
+      "to": 538.82,
+      "sid": 199,
+      "location": 2,
+      "content": "别人可能只是稍微指责了几句",
+      "music": 0.0
+    },
+    {
+      "from": 538.82,
+      "to": 540.82,
+      "sid": 200,
+      "location": 2,
+      "content": "甚至根本没当回事",
+      "music": 0.0
+    },
+    {
+      "from": 540.82,
+      "to": 545.3,
+      "sid": 201,
+      "location": 2,
+      "content": "但你的大脑里那个挑剔型父母立刻跳了出来",
+      "music": 0.0
+    },
+    {
+      "from": 545.3,
+      "to": 549.44,
+      "sid": 202,
+      "location": 2,
+      "content": "拿着最高倍数的显微镜死死盯着你的瑕疵",
+      "music": 0.0
+    },
+    {
+      "from": 549.44,
+      "to": 554.04,
+      "sid": 203,
+      "location": 2,
+      "content": "用最恶毒的语言对你进行疯狂的自我PUA",
+      "music": 0.0
+    },
+    {
+      "from": 554.04,
+      "to": 558.07,
+      "sid": 204,
+      "location": 2,
+      "content": "你看你就是个彻头彻尾的失败者",
+      "music": 0.0
+    },
+    {
+      "from": 558.07,
+      "to": 560.31,
+      "sid": 205,
+      "location": 2,
+      "content": "你连这点小事都做不好",
+      "music": 0.0
+    },
+    {
+      "from": 560.31,
+      "to": 562.13,
+      "sid": 206,
+      "location": 2,
+      "content": "你这辈子完了",
+      "music": 0.0
+    },
+    {
+      "from": 562.13,
+      "to": 566.04,
+      "sid": 207,
+      "location": 2,
+      "content": "我们现代人最大的悲哀就在于此",
+      "music": 0.0
+    },
+    {
+      "from": 566.04,
+      "to": 568.41,
+      "sid": 208,
+      "location": 2,
+      "content": "我们在成长的过程中",
+      "music": 0.0
+    },
+    {
+      "from": 568.41,
+      "to": 571.29,
+      "sid": 209,
+      "location": 2,
+      "content": "不仅没有学会怎么宽容自己",
+      "music": 0.0
+    },
+    {
+      "from": 571.29,
+      "to": 572.79,
+      "sid": 210,
+      "location": 2,
+      "content": "怎么爱自己",
+      "music": 0.0
+    },
+    {
+      "from": 572.79,
+      "to": 576.589,
+      "sid": 211,
+      "location": 2,
+      "content": "反而无师自通的学会了如何最精准",
+      "music": 0.0
+    },
+    {
+      "from": 576.589,
+      "to": 578.78,
+      "sid": 212,
+      "location": 2,
+      "content": "最残忍的刺伤自己",
+      "music": 0.0
+    },
+    {
+      "from": 578.78,
+      "to": 583.36,
+      "sid": 213,
+      "location": 2,
+      "content": "我们把早年长辈老师社会对我们的严苛要求",
+      "music": 0.0
+    },
+    {
+      "from": 583.36,
+      "to": 586.56,
+      "sid": 214,
+      "location": 2,
+      "content": "内化成了一个永远拿着鞭子的暴君",
+      "music": 0.0
+    },
+    {
+      "from": 586.56,
+      "to": 588.52,
+      "sid": 215,
+      "location": 2,
+      "content": "驻扎在我们脑海里",
+      "music": 0.0
+    },
+    {
+      "from": 588.52,
+      "to": 592.47,
+      "sid": 216,
+      "location": 2,
+      "content": "没有一种批判比自我批判更强烈",
+      "music": 0.0
+    },
+    {
+      "from": 592.47,
+      "to": 596.01,
+      "sid": 217,
+      "location": 2,
+      "content": "也没有一个法官比我们自己更严苛",
+      "music": 0.0
+    },
+    {
+      "from": 596.01,
+      "to": 599.8,
+      "sid": 218,
+      "location": 2,
+      "content": "我们成了压垮自己的最后一根稻草",
+      "music": 0.0
+    },
+    {
+      "from": 599.8,
+      "to": 601.84,
+      "sid": 219,
+      "location": 2,
+      "content": "咨询进行到中途",
+      "music": 0.0
+    },
+    {
+      "from": 601.84,
+      "to": 604.75,
+      "sid": 220,
+      "location": 2,
+      "content": "迎来了全书最惊心动魄",
+      "music": 0.0
+    },
+    {
+      "from": 604.75,
+      "to": 607.91,
+      "sid": 221,
+      "location": 2,
+      "content": "也最让人难以接受的一次交锋",
+      "music": 0.0
+    },
+    {
+      "from": 607.91,
+      "to": 609.91,
+      "sid": 222,
+      "location": 2,
+      "content": "在一次情绪崩溃中",
+      "music": 0.0
+    },
+    {
+      "from": 609.91,
+      "to": 612.73,
+      "sid": 223,
+      "location": 2,
+      "content": "蛤蟆对着苍鹭医生大声控诉",
+      "music": 0.0
+    },
+    {
+      "from": 612.73,
+      "to": 615.2,
+      "sid": 224,
+      "location": 2,
+      "content": "试图寻找情绪的出口",
+      "music": 0.0
+    },
+    {
+      "from": 615.2,
+      "to": 616.22,
+      "sid": 225,
+      "location": 2,
+      "content": "医生",
+      "music": 0.0
+    },
+    {
+      "from": 616.22,
+      "to": 617.99,
+      "sid": 226,
+      "location": 2,
+      "content": "你根本不懂",
+      "music": 0.0
+    },
+    {
+      "from": 617.99,
+      "to": 620.79,
+      "sid": 227,
+      "location": 2,
+      "content": "是我的朋友们看不起我",
+      "music": 0.0
+    },
+    {
+      "from": 620.79,
+      "to": 623.07,
+      "sid": 228,
+      "location": 2,
+      "content": "是獾夺走了我的权利",
+      "music": 0.0
+    },
+    {
+      "from": 623.07,
+      "to": 625.66,
+      "sid": 229,
+      "location": 2,
+      "content": "是老鼠们对我冷嘲热讽",
+      "music": 0.0
+    },
+    {
+      "from": 625.66,
+      "to": 627.19,
+      "sid": 230,
+      "location": 2,
+      "content": "是他们",
+      "music": 0.0
+    },
+    {
+      "from": 627.19,
+      "to": 630.19,
+      "sid": 231,
+      "location": 2,
+      "content": "是他们让我变成现在这个悲惨的样子",
+      "music": 0.0
+    },
+    {
+      "from": 630.19,
+      "to": 632.63,
+      "sid": 232,
+      "location": 2,
+      "content": "是他们让我这么痛苦的",
+      "music": 0.0
+    },
+    {
+      "from": 632.63,
+      "to": 636.03,
+      "sid": 233,
+      "location": 2,
+      "content": "蛤蟆在等待医生的同情和安慰",
+      "music": 0.0
+    },
+    {
+      "from": 636.03,
+      "to": 638.99,
+      "sid": 234,
+      "location": 2,
+      "content": "毕竟在我们的潜意识里",
+      "music": 0.0
+    },
+    {
+      "from": 638.99,
+      "to": 642.47,
+      "sid": 235,
+      "location": 2,
+      "content": "心理医生不就应该温柔的拍拍我们的肩膀",
+      "music": 0.0
+    },
+    {
+      "from": 642.47,
+      "to": 644.4,
+      "sid": 236,
+      "location": 2,
+      "content": "说是的",
+      "music": 0.0
+    },
+    {
+      "from": 644.4,
+      "to": 646.14,
+      "sid": 237,
+      "location": 2,
+      "content": "这不是你的错",
+      "music": 0.0
+    },
+    {
+      "from": 646.14,
+      "to": 648.02,
+      "sid": 238,
+      "location": 2,
+      "content": "你受委屈了吗",
+      "music": 0.0
+    },
+    {
+      "from": 648.02,
+      "to": 651.61,
+      "sid": 239,
+      "location": 2,
+      "content": "然而苍鹭医生并没有提供",
+      "music": 0.0
+    },
+    {
+      "from": 651.61,
+      "to": 654.62,
+      "sid": 240,
+      "location": 2,
+      "content": "哪怕一丝一毫的情绪价值",
+      "music": 0.0
+    },
+    {
+      "from": 654.62,
+      "to": 656.4,
+      "sid": 241,
+      "location": 2,
+      "content": "他极其冷静",
+      "music": 0.0
+    },
+    {
+      "from": 656.4,
+      "to": 660.6,
+      "sid": 242,
+      "location": 2,
+      "content": "甚至极其残忍的盯着蛤蟆反问了一句",
+      "music": 0.0
+    },
+    {
+      "from": 660.6,
+      "to": 663.35,
+      "sid": 243,
+      "location": 2,
+      "content": "足以震碎所有人三观的话",
+      "music": 0.0
+    },
+    {
+      "from": 663.35,
+      "to": 667.01,
+      "sid": 244,
+      "location": 2,
+      "content": "不蛤蟆我不这么认为",
+      "music": 0.0
+    },
+    {
+      "from": 667.37,
+      "to": 670.27,
+      "sid": 245,
+      "location": 2,
+      "content": "没有人能让你产生什么感受",
+      "music": 0.0
+    },
+    {
+      "from": 670.27,
+      "to": 672.53,
+      "sid": 246,
+      "location": 2,
+      "content": "除非你同意他们这么做",
+      "music": 0.0
+    },
+    {
+      "from": 672.53,
+      "to": 675.47,
+      "sid": 247,
+      "location": 2,
+      "content": "是你自己选择了悲伤",
+      "music": 0.0
+    },
+    {
+      "from": 675.47,
+      "to": 676.95,
+      "sid": 248,
+      "location": 2,
+      "content": "选择了愤怒",
+      "music": 0.0
+    },
+    {
+      "from": 676.95,
+      "to": 678.569,
+      "sid": 249,
+      "location": 2,
+      "content": "选择了抑郁",
+      "music": 0.0
+    },
+    {
+      "from": 678.929,
+      "to": 680.789,
+      "sid": 250,
+      "location": 2,
+      "content": "这句话太狠了",
+      "music": 0.0
+    },
+    {
+      "from": 680.789,
+      "to": 682.429,
+      "sid": 251,
+      "location": 2,
+      "content": "蛤蟆震惊了",
+      "music": 0.0
+    },
+    {
+      "from": 682.429,
+      "to": 682.929,
+      "sid": 252,
+      "location": 2,
+      "content": "他",
+      "music": 0.0
+    },
+    {
+      "from": 682.929,
+      "to": 685.369,
+      "sid": 253,
+      "location": 2,
+      "content": "无法接受屏幕前的我们",
+      "music": 0.0
+    },
+    {
+      "from": 685.369,
+      "to": 688.194,
+      "sid": 254,
+      "location": 2,
+      "content": "恐怕也同样觉得被冒犯了",
+      "music": 0.0
+    },
+    {
+      "from": 688.21,
+      "to": 691.49,
+      "sid": 255,
+      "location": 2,
+      "content": "什么叫我选择了痛苦",
+      "music": 0.0
+    },
+    {
+      "from": 691.49,
+      "to": 693.59,
+      "sid": 256,
+      "location": 2,
+      "content": "难道是我自找的吗",
+      "music": 0.0
+    },
+    {
+      "from": 693.59,
+      "to": 697.0,
+      "sid": 257,
+      "location": 2,
+      "content": "苍鹭医生依然不疾不徐",
+      "music": 0.0
+    },
+    {
+      "from": 697.0,
+      "to": 700.4,
+      "sid": 258,
+      "location": 2,
+      "content": "他一针见血地拨开了最后的伪装",
+      "music": 0.0
+    },
+    {
+      "from": 700.4,
+      "to": 701.95,
+      "sid": 259,
+      "location": 2,
+      "content": "他指出",
+      "music": 0.0
+    },
+    {
+      "from": 701.95,
+      "to": 706.55,
+      "sid": 260,
+      "location": 2,
+      "content": "蛤蟆其实一直在玩一个心理学上的高级游戏",
+      "music": 0.0
+    },
+    {
+      "from": 706.55,
+      "to": 708.63,
+      "sid": 261,
+      "location": 2,
+      "content": "可怜弱小的我",
+      "music": 0.0
+    },
+    {
+      "from": 708.63,
+      "to": 710.83,
+      "sid": 262,
+      "location": 2,
+      "content": "Poor little old me",
+      "music": 0.0
+    },
+    {
+      "from": 710.83,
+      "to": 714.16,
+      "sid": 263,
+      "location": 2,
+      "content": "简称PLOM游戏",
+      "music": 0.0
+    },
+    {
+      "from": 714.6,
+      "to": 717.4,
+      "sid": 264,
+      "location": 2,
+      "content": "这简直是对全人类的一记闷棍",
+      "music": 0.0
+    },
+    {
+      "from": 717.4,
+      "to": 719.8,
+      "sid": 265,
+      "location": 2,
+      "content": "让我们闭上眼睛",
+      "music": 0.0
+    },
+    {
+      "from": 719.8,
+      "to": 723.06,
+      "sid": 266,
+      "location": 2,
+      "content": "诚实的回想一下我们自己的生活",
+      "music": 0.0
+    },
+    {
+      "from": 723.06,
+      "to": 725.3,
+      "sid": 267,
+      "location": 2,
+      "content": "我们在职场遭遇不公",
+      "music": 0.0
+    },
+    {
+      "from": 725.3,
+      "to": 727.78,
+      "sid": 268,
+      "location": 2,
+      "content": "在婚姻中感到疲惫",
+      "music": 0.0
+    },
+    {
+      "from": 727.78,
+      "to": 730.18,
+      "sid": 269,
+      "location": 2,
+      "content": "在生活中感到窒息的时候",
+      "music": 0.0
+    },
+    {
+      "from": 731.26,
+      "to": 733.35,
+      "sid": 270,
+      "location": 2,
+      "content": "我们是不是也像蛤蟆一样",
+      "music": 0.0
+    },
+    {
+      "from": 733.35,
+      "to": 735.91,
+      "sid": 271,
+      "location": 2,
+      "content": "总喜欢向外寻找借口",
+      "music": 0.0
+    },
+    {
+      "from": 735.91,
+      "to": 739.91,
+      "sid": 272,
+      "location": 2,
+      "content": "如果不是我父母当年没有给我创造好条件",
+      "music": 0.0
+    },
+    {
+      "from": 739.91,
+      "to": 742.61,
+      "sid": 273,
+      "location": 2,
+      "content": "我今天怎么会这么辛苦",
+      "music": 0.0
+    },
+    {
+      "from": 742.89,
+      "to": 745.41,
+      "sid": 274,
+      "location": 2,
+      "content": "如果不是遇到了这个眼瞎的老板",
+      "music": 0.0
+    },
+    {
+      "from": 745.41,
+      "to": 748.15,
+      "sid": 275,
+      "location": 2,
+      "content": "我的才华早就施展出来了",
+      "music": 0.0
+    },
+    {
+      "from": 748.15,
+      "to": 750.85,
+      "sid": 276,
+      "location": 2,
+      "content": "如果不是我老公老婆太自私",
+      "music": 0.0
+    },
+    {
+      "from": 750.85,
+      "to": 752.2,
+      "sid": 277,
+      "location": 2,
+      "content": "不体贴",
+      "music": 0.0
+    },
+    {
+      "from": 752.2,
+      "to": 753.5,
+      "sid": 278,
+      "location": 2,
+      "content": "我的婚姻",
+      "music": 0.0
+    },
+    {
+      "from": 753.5,
+      "to": 755.6,
+      "sid": 279,
+      "location": 2,
+      "content": "怎么会是一滩死水",
+      "music": 0.0
+    },
+    {
+      "from": 755.6,
+      "to": 756.87,
+      "sid": 280,
+      "location": 2,
+      "content": "看啊",
+      "music": 0.0
+    },
+    {
+      "from": 756.87,
+      "to": 761.21,
+      "sid": 281,
+      "location": 2,
+      "content": "我们在不知不觉中编排了一出精妙绝伦的悲剧",
+      "music": 0.0
+    },
+    {
+      "from": 761.21,
+      "to": 764.67,
+      "sid": 282,
+      "location": 2,
+      "content": "而我们自己就是这场戏里最完美",
+      "music": 0.0
+    },
+    {
+      "from": 764.67,
+      "to": 766.87,
+      "sid": 283,
+      "location": 2,
+      "content": "最无辜的受害者",
+      "music": 0.0
+    },
+    {
+      "from": 766.87,
+      "to": 770.97,
+      "sid": 284,
+      "location": 2,
+      "content": "我们在潜意识里一遍遍的演练这套叙事",
+      "music": 0.0
+    },
+    {
+      "from": 770.97,
+      "to": 773.41,
+      "sid": 285,
+      "location": 2,
+      "content": "甚至四处向人倾诉",
+      "music": 0.0
+    },
+    {
+      "from": 773.41,
+      "to": 775.85,
+      "sid": 286,
+      "location": 2,
+      "content": "以此来换取别人的同情",
+      "music": 0.0
+    },
+    {
+      "from": 775.85,
+      "to": 778.34,
+      "sid": 287,
+      "location": 2,
+      "content": "但我们为什么要玩这个游戏",
+      "music": 0.0
+    },
+    {
+      "from": 778.34,
+      "to": 781.92,
+      "sid": 288,
+      "location": 2,
+      "content": "为什么我们如此贪恋受害者的身份",
+      "music": 0.0
+    },
+    {
+      "from": 781.92,
+      "to": 784.52,
+      "sid": 289,
+      "location": 2,
+      "content": "医生无情的揭开了谜底",
+      "music": 0.0
+    },
+    {
+      "from": 784.52,
+      "to": 788.24,
+      "sid": 290,
+      "location": 2,
+      "content": "因为当一个受害者太爽了",
+      "music": 0.0
+    },
+    {
+      "from": 788.24,
+      "to": 791.14,
+      "sid": 291,
+      "location": 2,
+      "content": "受害者拥有道德高地",
+      "music": 0.0
+    },
+    {
+      "from": 791.14,
+      "to": 793.64,
+      "sid": 292,
+      "location": 2,
+      "content": "受害者永远是无辜的",
+      "music": 0.0
+    },
+    {
+      "from": 793.64,
+      "to": 795.42,
+      "sid": 293,
+      "location": 2,
+      "content": "最重要的是",
+      "music": 0.0
+    },
+    {
+      "from": 795.42,
+      "to": 799.64,
+      "sid": 294,
+      "location": 2,
+      "content": "受害者不需要为现状承担任何责任",
+      "music": 0.0
+    },
+    {
+      "from": 799.64,
+      "to": 802.3,
+      "sid": 295,
+      "location": 2,
+      "content": "只要错都是别人的",
+      "music": 0.0
+    },
+    {
+      "from": 802.3,
+      "to": 805.06,
+      "sid": 296,
+      "location": 2,
+      "content": "我就不用去面对自己内心的懦弱",
+      "music": 0.0
+    },
+    {
+      "from": 805.06,
+      "to": 808.9,
+      "sid": 297,
+      "location": 2,
+      "content": "我就不用去承受改变带来的恐惧和阵痛",
+      "music": 0.0
+    },
+    {
+      "from": 809.22,
+      "to": 813.23,
+      "sid": 298,
+      "location": 2,
+      "content": "但这种短暂的心理安慰代价是什么",
+      "music": 0.0
+    },
+    {
+      "from": 813.51,
+      "to": 816.03,
+      "sid": 299,
+      "location": 2,
+      "content": "代价是极其惨重的",
+      "music": 0.0
+    },
+    {
+      "from": 816.03,
+      "to": 818.37,
+      "sid": 300,
+      "location": 2,
+      "content": "当你把自己定义为受害者",
+      "music": 0.0
+    },
+    {
+      "from": 818.37,
+      "to": 822.76,
+      "sid": 301,
+      "location": 2,
+      "content": "当你觉得一切痛苦都是别人强加给你的时候",
+      "music": 0.0
+    },
+    {
+      "from": 822.76,
+      "to": 826.36,
+      "sid": 302,
+      "location": 2,
+      "content": "你就等于亲手交出了自己命运的控制权",
+      "music": 0.0
+    },
+    {
+      "from": 826.36,
+      "to": 830.41,
+      "sid": 303,
+      "location": 2,
+      "content": "你把情绪的开关完完全全交给了别人",
+      "music": 0.0
+    },
+    {
+      "from": 830.41,
+      "to": 833.67,
+      "sid": 304,
+      "location": 2,
+      "content": "别人按下赞美你就开心",
+      "music": 0.0
+    },
+    {
+      "from": 833.67,
+      "to": 837.06,
+      "sid": 305,
+      "location": 2,
+      "content": "别人按下批评你就崩溃",
+      "music": 0.0
+    },
+    {
+      "from": 837.34,
+      "to": 841.48,
+      "sid": 306,
+      "location": 2,
+      "content": "只要你还在玩这个可怜弱小的我的游戏",
+      "music": 0.0
+    },
+    {
+      "from": 841.48,
+      "to": 844.26,
+      "sid": 307,
+      "location": 2,
+      "content": "只要你还在等别人来拯救你",
+      "music": 0.0
+    },
+    {
+      "from": 844.26,
+      "to": 846.67,
+      "sid": 308,
+      "location": 2,
+      "content": "你就永远被困在泥潭里",
+      "music": 0.0
+    },
+    {
+      "from": 846.67,
+      "to": 849.19,
+      "sid": 309,
+      "location": 2,
+      "content": "永远失去了真正改变人生",
+      "music": 0.0
+    },
+    {
+      "from": 849.19,
+      "to": 851.29,
+      "sid": 310,
+      "location": 2,
+      "content": "自我救赎的力量",
+      "music": 0.0
+    },
+    {
+      "from": 851.29,
+      "to": 854.05,
+      "sid": 311,
+      "location": 2,
+      "content": "蛤蟆在诊室里经历了愤怒",
+      "music": 0.0
+    },
+    {
+      "from": 854.05,
+      "to": 856.49,
+      "sid": 312,
+      "location": 2,
+      "content": "抗拒否认",
+      "music": 0.0
+    },
+    {
+      "from": 856.49,
+      "to": 858.61,
+      "sid": 313,
+      "location": 2,
+      "content": "最终迎来了灵魂的颤栗",
+      "music": 0.0
+    },
+    {
+      "from": 858.61,
+      "to": 860.19,
+      "sid": 314,
+      "location": 2,
+      "content": "他终于明白",
+      "music": 0.0
+    },
+    {
+      "from": 860.19,
+      "to": 864.71,
+      "sid": 315,
+      "location": 2,
+      "content": "只要自己还赖在儿童状态里索要糖果",
+      "music": 0.0
+    },
+    {
+      "from": 864.71,
+      "to": 868.069,
+      "sid": 316,
+      "location": 2,
+      "content": "或者躲在父母状态里自我编织",
+      "music": 0.0
+    },
+    {
+      "from": 868.429,
+      "to": 871.009,
+      "sid": 317,
+      "location": 2,
+      "content": "他就永远是个无法自理的巨婴",
+      "music": 0.0
+    },
+    {
+      "from": 871.009,
+      "to": 873.449,
+      "sid": 318,
+      "location": 2,
+      "content": "他眼含热泪的问苍鹭医生",
+      "music": 0.0
+    },
+    {
+      "from": 873.449,
+      "to": 875.72,
+      "sid": 319,
+      "location": 2,
+      "content": "那我到底该怎么办",
+      "music": 0.0
+    },
+    {
+      "from": 875.72,
+      "to": 877.78,
+      "sid": 320,
+      "location": 2,
+      "content": "我要怎么才能好起来",
+      "music": 0.0
+    },
+    {
+      "from": 877.78,
+      "to": 879.22,
+      "sid": 321,
+      "location": 2,
+      "content": "医生告诉他",
+      "music": 0.0
+    },
+    {
+      "from": 879.22,
+      "to": 881.26,
+      "sid": 322,
+      "location": 2,
+      "content": "要想真正得救",
+      "music": 0.0
+    },
+    {
+      "from": 881.26,
+      "to": 883.9,
+      "sid": 323,
+      "location": 2,
+      "content": "要想走出这片情绪的废墟",
+      "music": 0.0
+    },
+    {
+      "from": 883.9,
+      "to": 886.319,
+      "sid": 324,
+      "location": 2,
+      "content": "你只有一条路可以走",
+      "music": 0.0
+    },
+    {
+      "from": 886.319,
+      "to": 890.069,
+      "sid": 325,
+      "location": 2,
+      "content": "就是拼尽全力爬出泥潭",
+      "music": 0.0
+    },
+    {
+      "from": 890.069,
+      "to": 893.249,
+      "sid": 326,
+      "location": 2,
+      "content": "切换并进入成人自我状态",
+      "music": 0.0
+    },
+    {
+      "from": 893.249,
+      "to": 896.089,
+      "sid": 327,
+      "location": 2,
+      "content": "到底什么是成人状态",
+      "music": 0.0
+    },
+    {
+      "from": 896.089,
+      "to": 898.14,
+      "sid": 328,
+      "location": 2,
+      "content": "在心理学的定义里",
+      "music": 0.0
+    },
+    {
+      "from": 898.14,
+      "to": 900.48,
+      "sid": 329,
+      "location": 2,
+      "content": "处于成人自我状态的人",
+      "music": 0.0
+    },
+    {
+      "from": 900.48,
+      "to": 902.74,
+      "sid": 330,
+      "location": 2,
+      "content": "不再像个受惊的孩子一样",
+      "music": 0.0
+    },
+    {
+      "from": 902.74,
+      "to": 905.22,
+      "sid": 331,
+      "location": 2,
+      "content": "无底线的退让讨好",
+      "music": 0.0
+    },
+    {
+      "from": 905.22,
+      "to": 907.05,
+      "sid": 332,
+      "location": 2,
+      "content": "索取情绪价值",
+      "music": 0.0
+    },
+    {
+      "from": 907.05,
+      "to": 909.54,
+      "sid": 333,
+      "location": 2,
+      "content": "也不再像个暴君父母一样",
+      "music": 0.0
+    },
+    {
+      "from": 909.54,
+      "to": 911.86,
+      "sid": 334,
+      "location": 2,
+      "content": "对外界满怀敌意",
+      "music": 0.0
+    },
+    {
+      "from": 911.86,
+      "to": 914.06,
+      "sid": 335,
+      "location": 2,
+      "content": "对内疯狂批判",
+      "music": 0.0
+    },
+    {
+      "from": 914.06,
+      "to": 917.86,
+      "sid": 336,
+      "location": 2,
+      "content": "成人状态代表着绝对的理性清醒",
+      "music": 0.0
+    },
+    {
+      "from": 918.9,
+      "to": 921.26,
+      "sid": 337,
+      "location": 2,
+      "content": "它意味着你能够专注于当下",
+      "music": 0.0
+    },
+    {
+      "from": 921.26,
+      "to": 923.76,
+      "sid": 338,
+      "location": 2,
+      "content": "能够跳出情绪的漩涡",
+      "music": 0.0
+    },
+    {
+      "from": 923.76,
+      "to": 927.58,
+      "sid": 339,
+      "location": 2,
+      "content": "像一个旁观者一样客观的收集信息",
+      "music": 0.0
+    },
+    {
+      "from": 927.58,
+      "to": 928.94,
+      "sid": 340,
+      "location": 2,
+      "content": "分析问题",
+      "music": 0.0
+    },
+    {
+      "from": 928.94,
+      "to": 932.53,
+      "sid": 341,
+      "location": 2,
+      "content": "并做出最符合自身利益的判断",
+      "music": 0.0
+    },
+    {
+      "from": 932.93,
+      "to": 935.74,
+      "sid": 342,
+      "location": 2,
+      "content": "伴随着十次艰难的心理咨询",
+      "music": 0.0
+    },
+    {
+      "from": 935.98,
+      "to": 939.32,
+      "sid": 343,
+      "location": 2,
+      "content": "蛤蟆开始了漫长而痛苦的觉醒",
+      "music": 0.0
+    },
+    {
+      "from": 939.32,
+      "to": 942.37,
+      "sid": 344,
+      "location": 2,
+      "content": "她停止了对婚和鼹鼠的抱怨",
+      "music": 0.0
+    },
+    {
+      "from": 942.37,
+      "to": 947.56,
+      "sid": 345,
+      "location": 2,
+      "content": "因为他意识到朋友们的做派确实强势",
+      "music": 0.0
+    },
+    {
+      "from": 947.84,
+      "to": 950.72,
+      "sid": 346,
+      "location": 2,
+      "content": "但这不足以成为他自暴自弃的理由",
+      "music": 0.0
+    },
+    {
+      "from": 950.72,
+      "to": 953.44,
+      "sid": 347,
+      "location": 2,
+      "content": "他也不再为了过去那个懦弱",
+      "music": 0.0
+    },
+    {
+      "from": 953.44,
+      "to": 957.119,
+      "sid": 348,
+      "location": 2,
+      "content": "搞砸了一切的自己而日夜痛哭",
+      "music": 0.0
+    },
+    {
+      "from": 957.769,
+      "to": 962.069,
+      "sid": 349,
+      "location": 2,
+      "content": "因为他明白了自我责备并不能让时间倒流",
+      "music": 0.0
+    },
+    {
+      "from": 962.069,
+      "to": 963.889,
+      "sid": 350,
+      "location": 2,
+      "content": "他开始静下心来",
+      "music": 0.0
+    },
+    {
+      "from": 963.889,
+      "to": 965.78,
+      "sid": 351,
+      "location": 2,
+      "content": "理性的思考",
+      "music": 0.0
+    },
+    {
+      "from": 965.78,
+      "to": 968.24,
+      "sid": 352,
+      "location": 2,
+      "content": "我目前手里还有什么资源",
+      "music": 0.0
+    },
+    {
+      "from": 968.24,
+      "to": 970.64,
+      "sid": 353,
+      "location": 2,
+      "content": "我未来到底想过什么样的生活",
+      "music": 0.0
+    },
+    {
+      "from": 971.64,
+      "to": 973.62,
+      "sid": 354,
+      "location": 2,
+      "content": "我还能做些什么事业",
+      "music": 0.0
+    },
+    {
+      "from": 973.62,
+      "to": 975.84,
+      "sid": 355,
+      "location": 2,
+      "content": "这对我们现代人来说",
+      "music": 0.0
+    },
+    {
+      "from": 975.84,
+      "to": 979.26,
+      "sid": 356,
+      "location": 2,
+      "content": "具有极其深刻的现实指导意义",
+      "music": 0.0
+    },
+    {
+      "from": 979.74,
+      "to": 982.66,
+      "sid": 357,
+      "location": 2,
+      "content": "在今天这个充满不确定性的社会里",
+      "music": 0.0
+    },
+    {
+      "from": 982.66,
+      "to": 984.9,
+      "sid": 358,
+      "location": 2,
+      "content": "什么是真正的成人状态",
+      "music": 0.0
+    },
+    {
+      "from": 984.9,
+      "to": 989.45,
+      "sid": 359,
+      "location": 2,
+      "content": "那就是当你在职场上遇到极品老板",
+      "music": 0.0
+    },
+    {
+      "from": 989.45,
+      "to": 993.13,
+      "sid": 360,
+      "location": 2,
+      "content": "对你进行PUA或者公司无理裁员时",
+      "music": 0.0
+    },
+    {
+      "from": 993.13,
+      "to": 995.84,
+      "sid": 361,
+      "location": 2,
+      "content": "你不再陷入深夜的自我怀疑",
+      "music": 0.0
+    },
+    {
+      "from": 995.84,
+      "to": 998.43,
+      "sid": 362,
+      "location": 2,
+      "content": "觉得是不是我能力真的不行",
+      "music": 0.0
+    },
+    {
+      "from": 998.43,
+      "to": 1001.93,
+      "sid": 363,
+      "location": 2,
+      "content": "你也不再逢人就哭诉老板有多恶毒",
+      "music": 0.0
+    },
+    {
+      "from": 1001.93,
+      "to": 1004.55,
+      "sid": 364,
+      "location": 2,
+      "content": "你是冷静的打开招聘网站",
+      "music": 0.0
+    },
+    {
+      "from": 1004.55,
+      "to": 1008.03,
+      "sid": 365,
+      "location": 2,
+      "content": "理性评估这份工作带来的收益",
+      "music": 0.0
+    },
+    {
+      "from": 1008.03,
+      "to": 1010.43,
+      "sid": 366,
+      "location": 2,
+      "content": "和精神损耗是否成正比",
+      "music": 0.0
+    },
+    {
+      "from": 1011.51,
+      "to": 1012.76,
+      "sid": 367,
+      "location": 2,
+      "content": "如果觉得不值",
+      "music": 0.0
+    },
+    {
+      "from": 1012.76,
+      "to": 1015.32,
+      "sid": 368,
+      "location": 2,
+      "content": "你盘点好自己的核心竞争力",
+      "music": 0.0
+    },
+    {
+      "from": 1015.32,
+      "to": 1016.68,
+      "sid": 369,
+      "location": 2,
+      "content": "更新简历",
+      "music": 0.0
+    },
+    {
+      "from": 1016.68,
+      "to": 1018.46,
+      "sid": 370,
+      "location": 2,
+      "content": "从容的炒掉老板",
+      "music": 0.0
+    },
+    {
+      "from": 1018.46,
+      "to": 1019.88,
+      "sid": 371,
+      "location": 2,
+      "content": "换一份工作",
+      "music": 0.0
+    },
+    {
+      "from": 1019.88,
+      "to": 1023.5,
+      "sid": 372,
+      "location": 2,
+      "content": "就是当你在感情里受了重伤",
+      "music": 0.0
+    },
+    {
+      "from": 1023.5,
+      "to": 1026.3,
+      "sid": 373,
+      "location": 2,
+      "content": "遭遇了背叛或者冷暴力时",
+      "music": 0.0
+    },
+    {
+      "from": 1026.3,
+      "to": 1029.569,
+      "sid": 374,
+      "location": 2,
+      "content": "你不再像个孩子一样哭天抢地",
+      "music": 0.0
+    },
+    {
+      "from": 1029.569,
+      "to": 1031.149,
+      "sid": 375,
+      "location": 2,
+      "content": "觉得天塌了",
+      "music": 0.0
+    },
+    {
+      "from": 1031.149,
+      "to": 1033.109,
+      "sid": 376,
+      "location": 2,
+      "content": "自己再也没人爱了",
+      "music": 0.0
+    },
+    {
+      "from": 1033.109,
+      "to": 1035.169,
+      "sid": 377,
+      "location": 2,
+      "content": "你也不再像个怨妇一样",
+      "music": 0.0
+    },
+    {
+      "from": 1035.169,
+      "to": 1037.869,
+      "sid": 378,
+      "location": 2,
+      "content": "把所有的过错都推给对方",
+      "music": 0.0
+    },
+    {
+      "from": 1038.189,
+      "to": 1040.789,
+      "sid": 379,
+      "location": 2,
+      "content": "你是冷静的收拾好自己的行李",
+      "music": 0.0
+    },
+    {
+      "from": 1040.789,
+      "to": 1042.389,
+      "sid": 380,
+      "location": 2,
+      "content": "处理好财产",
+      "music": 0.0
+    },
+    {
+      "from": 1042.389,
+      "to": 1044.669,
+      "sid": 381,
+      "location": 2,
+      "content": "在心底默默划清界限",
+      "music": 0.0
+    },
+    {
+      "from": 1044.669,
+      "to": 1046.329,
+      "sid": 382,
+      "location": 2,
+      "content": "你清楚的明白",
+      "music": 0.0
+    },
+    {
+      "from": 1046.329,
+      "to": 1048.289,
+      "sid": 383,
+      "location": 2,
+      "content": "哪怕失去了一段关系",
+      "music": 0.0
+    },
+    {
+      "from": 1049.569,
+      "to": 1051.24,
+      "sid": 384,
+      "location": 2,
+      "content": "哪怕从此单身",
+      "music": 0.0
+    },
+    {
+      "from": 1051.24,
+      "to": 1055.09,
+      "sid": 385,
+      "location": 2,
+      "content": "你也完全有能力一个人把日子过得热气腾腾",
+      "music": 0.0
+    },
+    {
+      "from": 1055.09,
+      "to": 1056.53,
+      "sid": 386,
+      "location": 2,
+      "content": "风生水起",
+      "music": 0.0
+    },
+    {
+      "from": 1056.53,
+      "to": 1058.33,
+      "sid": 387,
+      "location": 2,
+      "content": "进入成人状态",
+      "music": 0.0
+    },
+    {
+      "from": 1058.33,
+      "to": 1061.79,
+      "sid": 388,
+      "location": 2,
+      "content": "就是你终于亲手拿回了人生的方向盘",
+      "music": 0.0
+    },
+    {
+      "from": 1061.79,
+      "to": 1066.269,
+      "sid": 389,
+      "location": 2,
+      "content": "你开始明白一个残酷却又让人无比踏实的道理",
+      "music": 0.0
+    },
+    {
+      "from": 1066.269,
+      "to": 1067.769,
+      "sid": 390,
+      "location": 2,
+      "content": "从今往后",
+      "music": 0.0
+    },
+    {
+      "from": 1067.769,
+      "to": 1070.35,
+      "sid": 391,
+      "location": 2,
+      "content": "无论是好的坏的",
+      "music": 0.0
+    },
+    {
+      "from": 1070.35,
+      "to": 1072.95,
+      "sid": 392,
+      "location": 2,
+      "content": "你都要对自己的所有情绪",
+      "music": 0.0
+    },
+    {
+      "from": 1072.95,
+      "to": 1078.74,
+      "sid": 393,
+      "location": 2,
+      "content": "所有决定所有人生结果负起100%的责任",
+      "music": 0.0
+    },
+    {
+      "from": 1078.74,
+      "to": 1080.74,
+      "sid": 394,
+      "location": 2,
+      "content": "你不等任何人来救你",
+      "music": 0.0
+    },
+    {
+      "from": 1080.74,
+      "to": 1084.11,
+      "sid": 395,
+      "location": 2,
+      "content": "因为你就是自己的救世主",
+      "music": 0.0
+    },
+    {
+      "from": 1084.11,
+      "to": 1088.27,
+      "sid": 396,
+      "location": 2,
+      "content": "故事的最后是一场令人动容的告别",
+      "music": 0.0
+    },
+    {
+      "from": 1088.79,
+      "to": 1091.4,
+      "sid": 397,
+      "location": 2,
+      "content": "经历了彻骨的心理剖析后",
+      "music": 0.0
+    },
+    {
+      "from": 1091.4,
+      "to": 1094.96,
+      "sid": 398,
+      "location": 2,
+      "content": "蛤蟆先生终于完成了心灵的蜕变",
+      "music": 0.0
+    },
+    {
+      "from": 1094.96,
+      "to": 1097.52,
+      "sid": 399,
+      "location": 2,
+      "content": "走出了苍鹭医生的心理诊室",
+      "music": 0.0
+    },
+    {
+      "from": 1097.52,
+      "to": 1100.76,
+      "sid": 400,
+      "location": 2,
+      "content": "阳光重新照在她的脸上",
+      "music": 0.0
+    },
+    {
+      "from": 1100.76,
+      "to": 1104.19,
+      "sid": 401,
+      "location": 2,
+      "content": "她不仅找回了以前那种鲜活的生命力",
+      "music": 0.0
+    },
+    {
+      "from": 1104.19,
+      "to": 1107.57,
+      "sid": 402,
+      "location": 2,
+      "content": "甚至变得更加沉稳和坚韧",
+      "music": 0.0
+    },
+    {
+      "from": 1107.57,
+      "to": 1111.4,
+      "sid": 403,
+      "location": 2,
+      "content": "他不再纠结于过去村里的那些虚名",
+      "music": 0.0
+    },
+    {
+      "from": 1111.68,
+      "to": 1114.14,
+      "sid": 404,
+      "location": 2,
+      "content": "而是勇敢的踏出舒适区",
+      "music": 0.0
+    },
+    {
+      "from": 1114.14,
+      "to": 1116.86,
+      "sid": 405,
+      "location": 2,
+      "content": "开办了一家新的房地产公司",
+      "music": 0.0
+    },
+    {
+      "from": 1116.86,
+      "to": 1120.24,
+      "sid": 406,
+      "location": 2,
+      "content": "他用实际行动和全新的精神面貌",
+      "music": 0.0
+    },
+    {
+      "from": 1120.24,
+      "to": 1122.88,
+      "sid": 407,
+      "location": 2,
+      "content": "重新赢得了朋友们的尊重",
+      "music": 0.0
+    },
+    {
+      "from": 1122.88,
+      "to": 1125.26,
+      "sid": 408,
+      "location": 2,
+      "content": "也赢回了对自己的尊重",
+      "music": 0.0
+    },
+    {
+      "from": 1125.26,
+      "to": 1129.74,
+      "sid": 409,
+      "location": 2,
+      "content": "蛤蟆的重生不仅仅是一个童话结局",
+      "music": 0.0
+    },
+    {
+      "from": 1130.02,
+      "to": 1133.639,
+      "sid": 410,
+      "location": 2,
+      "content": "他更为我们每一个在现实中挣扎的成年人",
+      "music": 0.0
+    },
+    {
+      "from": 1133.639,
+      "to": 1137.799,
+      "sid": 411,
+      "location": 2,
+      "content": "提供了一种极其强大的能够托底的力量感",
+      "music": 0.0
+    },
+    {
+      "from": 1137.799,
+      "to": 1139.49,
+      "sid": 412,
+      "location": 2,
+      "content": "我们不可否认",
+      "music": 0.0
+    },
+    {
+      "from": 1139.49,
+      "to": 1142.87,
+      "sid": 413,
+      "location": 2,
+      "content": "心理学经常会提到原生家庭的影响",
+      "music": 0.0
+    },
+    {
+      "from": 1142.87,
+      "to": 1143.53,
+      "sid": 414,
+      "location": 2,
+      "content": "是的",
+      "music": 0.0
+    },
+    {
+      "from": 1143.53,
+      "to": 1148.09,
+      "sid": 415,
+      "location": 2,
+      "content": "很多人心里的那个讨好的儿童和苛刻的父母",
+      "music": 0.0
+    },
+    {
+      "from": 1148.09,
+      "to": 1152.13,
+      "sid": 416,
+      "location": 2,
+      "content": "确实来源于童年时期未被满足的需求",
+      "music": 0.0
+    },
+    {
+      "from": 1152.13,
+      "to": 1154.47,
+      "sid": 417,
+      "location": 2,
+      "content": "和被过度严厉对待的经历",
+      "music": 0.0
+    },
+    {
+      "from": 1154.47,
+      "to": 1156.19,
+      "sid": 418,
+      "location": 2,
+      "content": "但这又怎样呢",
+      "music": 0.0
+    },
+    {
+      "from": 1156.19,
+      "to": 1159.81,
+      "sid": 419,
+      "location": 2,
+      "content": "蛤蟆的故事向我们揭示了一个极其伟大",
+      "music": 0.0
+    },
+    {
+      "from": 1159.81,
+      "to": 1161.91,
+      "sid": 420,
+      "location": 2,
+      "content": "也极其治愈的真相",
+      "music": 0.0
+    },
+    {
+      "from": 1161.91,
+      "to": 1164.929,
+      "sid": 421,
+      "location": 2,
+      "content": "无论你的原生家庭曾经多么糟糕",
+      "music": 0.0
+    },
+    {
+      "from": 1164.929,
+      "to": 1167.549,
+      "sid": 422,
+      "location": 2,
+      "content": "无论你过去经历了多少背叛",
+      "music": 0.0
+    },
+    {
+      "from": 1167.549,
+      "to": 1170.91,
+      "sid": 423,
+      "location": 2,
+      "content": "打压和无法言说的创伤",
+      "music": 0.0
+    },
+    {
+      "from": 1170.91,
+      "to": 1172.79,
+      "sid": 424,
+      "location": 2,
+      "content": "只要你今天愿意",
+      "music": 0.0
+    },
+    {
+      "from": 1172.79,
+      "to": 1177.27,
+      "sid": 425,
+      "location": 2,
+      "content": "你随时可以强行停下那命运齿轮上内耗的转动",
+      "music": 0.0
+    },
+    {
+      "from": 1177.27,
+      "to": 1178.72,
+      "sid": 426,
+      "location": 2,
+      "content": "童年的时候",
+      "music": 0.0
+    },
+    {
+      "from": 1178.72,
+      "to": 1180.3,
+      "sid": 427,
+      "location": 2,
+      "content": "父母怎么对你",
+      "music": 0.0
+    },
+    {
+      "from": 1180.3,
+      "to": 1182.06,
+      "sid": 428,
+      "location": 2,
+      "content": "环境怎么塑造你",
+      "music": 0.0
+    },
+    {
+      "from": 1182.06,
+      "to": 1183.96,
+      "sid": 429,
+      "location": 2,
+      "content": "你是一个弱小无力的孩子",
+      "music": 0.0
+    },
+    {
+      "from": 1183.96,
+      "to": 1185.12,
+      "sid": 430,
+      "location": 2,
+      "content": "你没得选",
+      "music": 0.0
+    },
+    {
+      "from": 1185.12,
+      "to": 1189.19,
+      "sid": 431,
+      "location": 2,
+      "content": "但今天你已经是一个有力量的成年人了",
+      "music": 0.0
+    },
+    {
+      "from": 1189.19,
+      "to": 1191.37,
+      "sid": 432,
+      "location": 2,
+      "content": "你完全可以做自己的父母",
+      "music": 0.0
+    },
+    {
+      "from": 1191.37,
+      "to": 1193.67,
+      "sid": 433,
+      "location": 2,
+      "content": "在这个成年后的世界里",
+      "music": 0.0
+    },
+    {
+      "from": 1193.67,
+      "to": 1196.89,
+      "sid": 434,
+      "location": 2,
+      "content": "重新把那个伤痕累累的自己养育一遍",
+      "music": 0.0
+    },
+    {
+      "from": 1196.89,
+      "to": 1199.09,
+      "sid": 435,
+      "location": 2,
+      "content": "当你终于学会蹲下来",
+      "music": 0.0
+    },
+    {
+      "from": 1199.09,
+      "to": 1202.19,
+      "sid": 436,
+      "location": 2,
+      "content": "轻轻抱住内心里那个哭泣的小孩",
+      "music": 0.0
+    },
+    {
+      "from": 1202.19,
+      "to": 1204.15,
+      "sid": 437,
+      "location": 2,
+      "content": "倾听她多年的委屈",
+      "music": 0.0
+    },
+    {
+      "from": 1204.15,
+      "to": 1206.86,
+      "sid": 438,
+      "location": 2,
+      "content": "当你终于放下手里的鞭子",
+      "music": 0.0
+    },
+    {
+      "from": 1207.18,
+      "to": 1210.42,
+      "sid": 439,
+      "location": 2,
+      "content": "不再苛责自己的每一次失误和不完美",
+      "music": 0.0
+    },
+    {
+      "from": 1210.42,
+      "to": 1213.74,
+      "sid": 440,
+      "location": 2,
+      "content": "当你真正发自肺腑的去心疼",
+      "music": 0.0
+    },
+    {
+      "from": 1213.74,
+      "to": 1216.46,
+      "sid": 441,
+      "location": 2,
+      "content": "那个在生活里跌跌撞撞",
+      "music": 0.0
+    },
+    {
+      "from": 1216.46,
+      "to": 1219.6,
+      "sid": 442,
+      "location": 2,
+      "content": "却依然努力活到今天的自己的时候",
+      "music": 0.0
+    },
+    {
+      "from": 1219.6,
+      "to": 1224.46,
+      "sid": 443,
+      "location": 2,
+      "content": "你心里的那些抑郁不甘和阴霾",
+      "music": 0.0
+    },
+    {
+      "from": 1224.46,
+      "to": 1229.63,
+      "sid": 444,
+      "location": 2,
+      "content": "就会像被烈日炙烤过的晨露一样彻底烟消云散",
+      "music": 0.0
+    },
+    {
+      "from": 1229.63,
+      "to": 1232.71,
+      "sid": 445,
+      "location": 2,
+      "content": "和上蛤蟆先生去看心理医生这本书",
+      "music": 0.0
+    },
+    {
+      "from": 1232.71,
+      "to": 1236.37,
+      "sid": 446,
+      "location": 2,
+      "content": "我常常在深夜里陷入长久的沉默",
+      "music": 0.0
+    },
+    {
+      "from": 1236.37,
+      "to": 1241.109,
+      "sid": 447,
+      "location": 2,
+      "content": "我们这一生其实就是一场不断与自我交战",
+      "music": 0.0
+    },
+    {
+      "from": 1241.109,
+      "to": 1244.249,
+      "sid": 448,
+      "location": 2,
+      "content": "又最终走向自我和解的旅程",
+      "music": 0.0
+    },
+    {
+      "from": 1244.249,
+      "to": 1246.3,
+      "sid": 449,
+      "location": 2,
+      "content": "人性的弱点在于",
+      "music": 0.0
+    },
+    {
+      "from": 1246.3,
+      "to": 1249.929,
+      "sid": 450,
+      "location": 2,
+      "content": "我们总是渴望有一个完美的避风港",
+      "music": 0.0
+    },
+    {
+      "from": 1249.929,
+      "to": 1253.609,
+      "sid": 451,
+      "location": 2,
+      "content": "渴望有一个无条件包容我们的救世主降临",
+      "music": 0.0
+    },
+    {
+      "from": 1253.609,
+      "to": 1257.129,
+      "sid": 452,
+      "location": 2,
+      "content": "但现实的铁拳无数次的教育我们",
+      "music": 0.0
+    },
+    {
+      "from": 1257.129,
+      "to": 1261.61,
+      "sid": 453,
+      "location": 2,
+      "content": "这个世界上能把你从深渊和泥潭里拉出来的",
+      "music": 0.0
+    },
+    {
+      "from": 1261.61,
+      "to": 1264.27,
+      "sid": 454,
+      "location": 2,
+      "content": "从来不是别人居高临下的同情",
+      "music": 0.0
+    },
+    {
+      "from": 1264.27,
+      "to": 1268.29,
+      "sid": 455,
+      "location": 2,
+      "content": "也不是所谓的时间会冲淡一切的流逝",
+      "music": 0.0
+    },
+    {
+      "from": 1268.29,
+      "to": 1272.41,
+      "sid": 456,
+      "location": 2,
+      "content": "而是那个在某一个瞬间终于决定不再逃避",
+      "music": 0.0
+    },
+    {
+      "from": 1272.41,
+      "to": 1274.07,
+      "sid": 457,
+      "location": 2,
+      "content": "勇敢的站起来",
+      "music": 0.0
+    },
+    {
+      "from": 1274.07,
+      "to": 1276.99,
+      "sid": 458,
+      "location": 2,
+      "content": "承担起自己全部生命重量的你",
+      "music": 0.0
+    },
+    {
+      "from": 1276.99,
+      "to": 1278.69,
+      "sid": 459,
+      "location": 2,
+      "content": "收起你的眼泪",
+      "music": 0.0
+    },
+    {
+      "from": 1278.69,
+      "to": 1281.67,
+      "sid": 460,
+      "location": 2,
+      "content": "别再玩那个廉价的受害者游戏了",
+      "music": 0.0
+    },
+    {
+      "from": 1281.67,
+      "to": 1283.81,
+      "sid": 461,
+      "location": 2,
+      "content": "你已经是个成年人了",
+      "music": 0.0
+    },
+    {
+      "from": 1283.81,
+      "to": 1287.51,
+      "sid": 462,
+      "location": 2,
+      "content": "你的肩膀比你想象的要宽广得多",
+      "music": 0.0
+    },
+    {
+      "from": 1287.51,
+      "to": 1289.15,
+      "sid": 463,
+      "location": 2,
+      "content": "你有足够的力量",
+      "music": 0.0
+    },
+    {
+      "from": 1289.15,
+      "to": 1293.45,
+      "sid": 464,
+      "location": 2,
+      "content": "也有绝对的资格去斩断那些让你内耗的枷锁",
+      "music": 0.0
+    },
+    {
+      "from": 1293.45,
+      "to": 1297.92,
+      "sid": 465,
+      "location": 2,
+      "content": "去理直气壮地拥有一个快乐自洽",
+      "music": 0.0
+    },
+    {
+      "from": 1297.92,
+      "to": 1300.32,
+      "sid": 466,
+      "location": 2,
+      "content": "充满掌控感的人生",
+      "music": 0.0
+    },
+    {
+      "from": 1300.32,
+      "to": 1304.1,
+      "sid": 467,
+      "location": 2,
+      "content": "蛤蟆先生的心理咨询圆满结束了",
+      "music": 0.0
+    },
+    {
+      "from": 1304.1,
+      "to": 1306.66,
+      "sid": 468,
+      "location": 2,
+      "content": "他开着车驶向了新生活",
+      "music": 0.0
+    },
+    {
+      "from": 1307.7,
+      "to": 1308.82,
+      "sid": 469,
+      "location": 2,
+      "content": "但对于屏幕前的你",
+      "music": 0.0
+    },
+    {
+      "from": 1308.82,
+      "to": 1309.92,
+      "sid": 470,
+      "location": 2,
+      "content": "我来说",
+      "music": 0.0
+    },
+    {
+      "from": 1309.92,
+      "to": 1312.98,
+      "sid": 471,
+      "location": 2,
+      "content": "属于我们每个人的人生自我疗愈",
+      "music": 0.0
+    },
+    {
+      "from": 1312.98,
+      "to": 1315.54,
+      "sid": 472,
+      "location": 2,
+      "content": "也许今天才刚刚开始",
+      "music": 0.0
+    },
+    {
+      "from": 1315.54,
+      "to": 1320.26,
+      "sid": 473,
+      "location": 2,
+      "content": "今晚不妨在心里问自己一个直击灵魂的思考题",
+      "music": 0.0
+    },
+    {
+      "from": 1320.26,
+      "to": 1323.02,
+      "sid": 474,
+      "location": 2,
+      "content": "在面对生活的重压和冲突时",
+      "music": 0.0
+    },
+    {
+      "from": 1323.02,
+      "to": 1327.96,
+      "sid": 475,
+      "location": 2,
+      "content": "现在的你觉得自己更像那个委屈讨好的儿童",
+      "music": 0.0
+    },
+    {
+      "from": 1327.96,
+      "to": 1331.94,
+      "sid": 476,
+      "location": 2,
+      "content": "还是更像那个疯狂指责自己的苛刻父母",
+      "music": 0.0
+    },
+    {
+      "from": 1331.94,
+      "to": 1333.62,
+      "sid": 477,
+      "location": 2,
+      "content": "无论答案是什么",
+      "music": 0.0
+    },
+    {
+      "from": 1333.62,
+      "to": 1335.22,
+      "sid": 478,
+      "location": 2,
+      "content": "都没关系",
+      "music": 0.0
+    },
+    {
+      "from": 1335.22,
+      "to": 1338.24,
+      "sid": 479,
+      "location": 2,
+      "content": "看见就是改变的开始",
+      "music": 0.0
+    },
+    {
+      "from": 1338.24,
+      "to": 1339.96,
+      "sid": 480,
+      "location": 2,
+      "content": "我是搜搜不说话",
+      "music": 0.0
+    },
+    {
+      "from": 1339.96,
+      "to": 1341.69,
+      "sid": 481,
+      "location": 2,
+      "content": "外面风大雨大",
+      "music": 0.0
+    },
+    {
+      "from": 1341.69,
+      "to": 1344.93,
+      "sid": 482,
+      "location": 2,
+      "content": "成年人的世界从来没有容易二字",
+      "music": 0.0
+    },
+    {
+      "from": 1344.93,
+      "to": 1349.35,
+      "sid": 483,
+      "location": 2,
+      "content": "但请你务必在心里给自己留一个最温暖的拥抱",
+      "music": 0.0
+    },
+    {
+      "from": 1349.35,
+      "to": 1352.16,
+      "sid": 484,
+      "location": 2,
+      "content": "关注我漫漫长夜",
+      "music": 0.0
+    },
+    {
+      "from": 1352.16,
+      "to": 1354.06,
+      "sid": 485,
+      "location": 2,
+      "content": "我们一起在文字里",
+      "music": 0.0
+    },
+    {
+      "from": 1354.06,
+      "to": 1357.66,
+      "sid": 486,
+      "location": 2,
+      "content": "把那些破碎的自己一片片拼凑起来",
+      "music": 0.0
+    },
+    {
+      "from": 1357.66,
+      "to": 1359.1,
+      "sid": 487,
+      "location": 2,
+      "content": "重新出发",
+      "music": 0.0
+    }
+  ]
+}
